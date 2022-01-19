@@ -1,10 +1,7 @@
 <?php
-//defined('VG_ACCESS') or die('Access denied'); //access denied
-
 //*************************************************************************
-//* starting 
+//* router config
 //*************************************************************************
 
-require 'app/core/Router.php';
 
-$router = new Router;
+

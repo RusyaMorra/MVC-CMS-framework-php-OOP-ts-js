@@ -2,9 +2,5 @@
 //defined('VG_ACCESS') or die('Access denied'); //access denied
 
 //*************************************************************************
-//* starting 
+//* db classes with methods
 //*************************************************************************
-
-require 'app/core/Router.php';
-
-$router = new Router;

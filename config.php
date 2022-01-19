@@ -1,5 +1,5 @@
 <?php
-defined('VG_ACCESS') or die('Access denied'); //access denied
+//defined('VG_ACCESS') or die('Access denied'); //access denied
 
 //*************************************************************************
 //* base config
@@ -13,9 +13,6 @@ const HOST = 'localhost';
 const USER = 'root';
 const PASSWORD = ''; 
 const DB_name = ''; 
-
-
-
 
 
 

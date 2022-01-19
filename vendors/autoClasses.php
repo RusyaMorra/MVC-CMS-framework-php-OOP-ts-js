@@ -1,10 +1,9 @@
 <?php
-//defined('VG_ACCESS') or die('Access denied'); //access denied
-
 //*************************************************************************
-//* starting 
+//* autoclasses loader function
 //*************************************************************************
 
-require 'app/core/Router.php';
 
-$router = new Router;
+spl_autoload_register(function ($class) {
+    include 'classes/' . $class . '.class.php';
+});
