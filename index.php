@@ -13,14 +13,15 @@ session_start();// session on
 //*************************************************************************
 //* libs
 //*************************************************************************
-require 'vendors/debug.php';
-require 'vendors/autoClasses.php';
+require_once 'libs/debug.php';
+require_once 'libs/autoClasses.php';
 
 //*************************************************************************
 //* file connections 
 //*************************************************************************
-require_once 'config.php';
-require_once 'bootstrap/Bootstrap.php';
+
+require 'config/database.php';
+require 'bootstrap/Bootstrap.php';
 
 //*************************************************************************
 //* any things and libs

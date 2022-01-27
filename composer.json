@@ -1,0 +1,16 @@
+{
+    "name": "comp/dragonv1",
+    "license": "GPL-3.0 only",
+    "autoload": {
+        "psr-4": {
+            "Comp\\Dragonv1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rusya Morra",
+            "email": "muso-123@mail.com"
+        }
+    ],
+    "require": {}
+}
