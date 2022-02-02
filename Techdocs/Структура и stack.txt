@@ -11,6 +11,10 @@
 -composer
 -webpack
 -mysql
+-memcahed
+-redis
+-kafca
+-grafql
 
 }
 фронтенд центр управления(админка){

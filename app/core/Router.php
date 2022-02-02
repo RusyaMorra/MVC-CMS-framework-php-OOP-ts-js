@@ -5,7 +5,7 @@
 namespace app\core;
 
 
-
+use app\core\View;
 
 class Router{
 
@@ -46,12 +46,12 @@ class Router{
 
     public function run(){
         if ($this->match()) {
-            $path = 'application\controllers\\'.ucfirst($this->params['controller']).'Controller';
+            $path = 'app\admin\controllers\\'.ucfirst($this->params['controller']).'Controller';
             if (class_exists($path)) {
                 $action = $this->params['action'].'Action';
                 if (method_exists($path, $action)) {
                     $controller = new $path($this->params);
-                    $controller->$action();
+                    $controller->$action($this->params);
                 } else {
                     View::errorCode(404);
                 }
@@ -73,43 +73,4 @@ class Router{
 
 
 
-
-
-/*
-$method = $_SERVER['REQUEST_METHOD'];
-
-$q = $_GET['q'];
-$params = explode('/', $q);
-
-$type = $params[0]; // тип параметра 
-$id =  $params[1];  //номер индификатора
-
-if ($method ==='GET'){
-    //работа с основными типами start
-    if ($type ==='artical-title-img'){
-        if(isset($id)){
-            foreach ($artical_title_img_object as $param) {
-               if($param['id']==$id){
-                echo json_encode($param) ;
-               }
-            }
-                
-        }else{
-            echo json_encode($artical_title_img_object);
-       }
-    }elseif($type ==='gallery-element'){
-        if(isset($id)){
-            foreach ($gallery_elements as $param_gallery) {
-               if($param_gallery['id']==$id){
-                echo json_encode($param_gallery);
-               }
-            }
-                
-        }else{
-            echo json_encode($gallery_elements);
-       }
-    }
-}  
-
-*/
 

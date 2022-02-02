@@ -3,16 +3,39 @@
 //* router config
 //*************************************************************************
 
-return [  
+return [
+	'' => [
+		'controller' => 'main',
+		'action' => 'index',
+	],
 
-    'admin/login' => [
-        'controller1'=> 'admin',
-        'action1' => 'login'
-    ],
+	'account/register' => [
+		'controller' => 'account',
+		'action' => 'register',
+	],
 
-    'admin/main' => [
-        'controller'=> 'admin',
-        'action' => 'main'
-    ]
-    
+	'account/login' => [
+		'controller' => 'account',
+		'action' => 'login',
+	],
+
+	'admin' => [
+		'controller' => 'admin',
+		'action' => 'adminmain',
+	],
+
+	'home' => [
+		'controller' => 'home',
+		'action' => 'home',
+	],
+
+	'blog' => [
+		'controller' => 'blog',
+		'action' => 'blog',
+	],
+	'shop' => [
+		'controller' => 'shop',
+		'action' => 'shop',
+	],
+	
 ];
