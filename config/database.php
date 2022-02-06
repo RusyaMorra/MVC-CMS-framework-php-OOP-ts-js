@@ -5,14 +5,12 @@
 //* base config
 //*************************************************************************
 
-const SITE_URL = 'http://'; 
-const PATH = '/'; 
-
-
-const HOST = 'localhost'; 
-const USER = 'root';
-const PASSWORD = ''; 
-const DB_name = ''; 
-
-
+return [
+    'SITE_URL' => 'http://',
+    'PATH' => '/',
+	'host' => 'localhost',
+	'DBname' => 'dragon',
+	'user' => 'root',
+	'password' => '',
+];
 

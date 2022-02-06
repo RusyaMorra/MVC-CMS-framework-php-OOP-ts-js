@@ -1,0 +1,41 @@
+Стиль: 
+-mvc 
+-ооп
+-паттерны проектирования
+-namespaces и автоклассы
+
+
+1)бэкенд логика{
+-php 
+-xdebager
+-composer
+-webpack
+-mysql
+-memcahed
+-redis
+-kafca
+-grafql
+
+}
+фронтенд центр управления(админка){
+-js
+-html(полная сборка gulp минификация, pug и итд)
+-css bootstrap
+-typescript
+-webpack
+-bable
+-линтеры и форматтеры 
+}
+
+2)подключение и внедрение темплейтов и плагинов.
+
+
+
+
+
+
+3)Teстирование{
+
+}
+
+4)Развертывания ci/cd docker сервер
