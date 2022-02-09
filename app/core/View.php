@@ -9,6 +9,7 @@ class View {
 	public $path;
 	public $route;
 	public $layout = 'default';
+	public $layoutTamplate = 'index';
 
 	public function __construct($route) {
 		$this->route = $route;
@@ -16,14 +17,26 @@ class View {
        // debug($this->path);
 	}
 
-    public function render($title, $vars = []) {
+    public function renderAdmin($title, $vars = []) {
         extract($vars); 
-        $path = 'templates/'.$this->path.'.php';
+        $path = 'admin-panel/templates/'.$this->path.'.php';
        if(file_exists($path)){
             ob_start();
             require $path;
             $content = ob_get_clean();
-            require 'templates/'.$this->layout. '.php';
+            require 'admin-panel/templates/'.$this->layout. '.php';
+        }
+        
+    }
+
+    public function renderUser($title, $vars = []) {
+        extract($vars); 
+        $path = 'content/my-theme/'.$this->path.'.php';
+       if(file_exists($path)){
+            ob_start();
+            require $path;
+            $content = ob_get_clean();
+            require 'content/my-theme/'.$this->layoutTamplate. '.php';
         }
         
     }
@@ -35,10 +48,12 @@ class View {
 
     public static function errorCode($code) {
         http_response_code($code);
-        $path = 'templates/errors/'.$code. '.php';
+        $path = 'admin-panel/templates/errors/'.$code. '.php';
+        //$path = 'content/my-theme/errors/'.$code. '.php';
         if(file_exists($path)){
             require $path;
         }
+        
         exit;
     }
 }    

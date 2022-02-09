@@ -14,10 +14,7 @@ class Db {
 	protected $db;
 	
 	public function __construct() {
-		
 		$this->connect();
-		
-
 	}
 
 	private function connect() {

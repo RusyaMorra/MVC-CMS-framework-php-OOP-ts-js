@@ -15,14 +15,20 @@ abstract class Controller{
     public function __construct($route) {
         $this->route = $route;
         $this->views = new View($route);
-        $this->loadModel($route['controller']);
+        $this->model = $this->loadModel($route['controller']);
 
         
     }
 
+    /**
+     * load models
+     */
+    
     public function loadModel($name) {
-        $path = 'app/admin/models/'.ucfirst($name).'.php';
-        debug($path);
+        $path = 'app\admin\models\\'.ucfirst($name);
+        if(class_exists($path)) {
+            return new $path;
+        }
     }
 
 }

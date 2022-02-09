@@ -1,41 +1,62 @@
 <?php
+
 //*************************************************************************
 //* router config
 //*************************************************************************
 
 return [
+
+//*************************************************************************
+//* Admin Routes 
+//*************************************************************************
 	'' => [
-		'controller' => 'main',
+		'controller' => 'initialization',
 		'action' => 'index',
 	],
 
-	'account/register' => [
-		'controller' => 'account',
+	'admin/register' => [
+		'controller' => 'admin',
 		'action' => 'register',
 	],
 
-	'account/login' => [
-		'controller' => 'account',
+	'admin/login' => [
+		'controller' => 'admin',
 		'action' => 'login',
 	],
 
-	'admin' => [
+	'admin/logout' => [
 		'controller' => 'admin',
-		'action' => 'adminmain',
+		'action' => 'logout',
 	],
-
+	'admin/add' => [
+		'controller' => 'admin',
+		'action' => 'logout',
+	],
+		
+//*************************************************************************
+//* User Routes 
+//*************************************************************************
+	
 	'home' => [
-		'controller' => 'home',
+		'controller' => 'main',
 		'action' => 'home',
 	],
 
 	'blog' => [
-		'controller' => 'blog',
+		'controller' => 'main',
 		'action' => 'blog',
 	],
 	'shop' => [
-		'controller' => 'shop',
+		'controller' => 'main',
 		'action' => 'shop',
 	],
-	
+	'about' => [
+		'controller' => 'main',
+		'action' => 'about',
+	],
+	'contact' => [
+		'controller' => 'main',
+		'action' => 'contact',
+	]
+
 ];

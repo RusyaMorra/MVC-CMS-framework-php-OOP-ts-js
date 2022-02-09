@@ -12,5 +12,7 @@
             "email": "muso-123@mail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "twig/twig": "^3.3"
+    }
 }

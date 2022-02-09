@@ -8,16 +8,16 @@ use app\core\Controller;
 
 
 
-class AccountController extends Controller{ 
+class AdminController extends Controller{ 
 
     public function registerAction(){
-        $this->views->render('Вход');
+        $this->views->renderAdmin('Вход');
         
         
     }
 
     public function loginAction(){
-        $this->views->render('Регистрация');
+        $this->views->renderAdmin('Регистрация');
     }
 
 

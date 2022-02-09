@@ -1,11 +1,10 @@
-Стиль: 
--mvc 
--ооп
--паттерны проектирования
--namespaces и автоклассы
+Style:
+-mvc
+- oop
+-design patterns
+-namespaces and autoclasses
 
-
-1)бэкенд логика{
+1)backend logic{
 -php 
 -xdebager
 -composer
@@ -17,25 +16,21 @@
 -grafql
 
 }
-фронтенд центр управления(админка){
+
+frontend control center (admin panel){
 -js
--html(полная сборка gulp минификация, pug и итд)
+-html(complete assembly of gulp minification, pug, etc.)
 -css bootstrap
 -typescript
 -webpack
 -bable
--линтеры и форматтеры 
+-linters and formatters
 }
 
-2)подключение и внедрение темплейтов и плагинов.
+2)connecting and implementing templates and plugins.
 
-
-
-
-
-
-3)Teстирование{
+3)Testing{
 
 }
 
-4)Развертывания ci/cd docker сервер
+4)Deployments ci/cd docker server
