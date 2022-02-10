@@ -3,14 +3,14 @@
 //* Class  model
 //*************************************************************************
 namespace app\core;
-use libs\Db;
+use app\modules\DataBase;
 
 abstract class Model{
 
     public $db;
 	
 	public function __construct() {
-		$this->db = new Db;
+		$this->db = new DataBase;
         
 	}
 }

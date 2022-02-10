@@ -14,12 +14,12 @@ return [
 		'action' => 'index',
 	],
 
-	'admin/register' => [
+	'register' => [
 		'controller' => 'admin',
 		'action' => 'register',
 	],
 
-	'admin/login' => [
+	'login' => [
 		'controller' => 'admin',
 		'action' => 'login',
 	],

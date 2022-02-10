@@ -5,17 +5,39 @@
 //* db classes with methods
 //*************************************************************************
 
-namespace libs;
+namespace app\modules;
 
 use PDO;
 
-class Db {
+class DataBase {
 
+    /**
+     * @var
+     */
+    
 	protected $db;
 	
+	 /**
+     *  Construct, create opject of PDO class
+     */
 	public function __construct() {
 		$this->connect();
+		$this->defaultSetting();
+
 	}
+
+	private function defaultSetting () {
+		// set default setting database
+		$this->db->exec("SET NAMES 'utf8'");
+		$this->db->exec("SET CHARACTER SET utf8");
+		$this->db->exec("SET CHARACTER_SET_CONNECTION=utf8");
+		$this->db->exec("SET SQL_MODE = ''");
+
+	}
+
+ 	/**
+     * Db connection
+     */
 
 	private function connect() {
 		try {
@@ -28,6 +50,10 @@ class Db {
 		}
 	}
 
+ 	/**
+     * exec query statement
+     */
+
     public function query($sql, $params = []) {
 		$stmt = $this->db->prepare($sql);
 		if (!empty($params)) {
@@ -39,12 +65,19 @@ class Db {
 		return $stmt;
 	}
 
-
+	/**
+     * row statement
+     */
+	
 	public function row($sql, $params = []) {
 		$result = $this->query($sql, $params);
 		return $result->fetchAll(PDO::FETCH_ASSOC);
 	} 
     
+    /**
+     * columnstatement
+     */
+	
 	public  function column($sql, $params = []) {
 		$result = $this->query($sql, $params);
 		return $result->fetchColumn();
