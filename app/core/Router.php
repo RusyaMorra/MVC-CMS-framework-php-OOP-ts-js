@@ -2,35 +2,67 @@
 //*************************************************************************
 //* main Router class 
 //*************************************************************************
+//*************************************************************************
+//* namespaces
+//*************************************************************************
 namespace app\core;
 
-
+//*************************************************************************
+//* class loading
+//*************************************************************************
 use app\core\View;
 
 class Router{
 
-    protected $routes = [];
-    protected $params = [];
+    /**
+     * @var
+     */
+
+    protected  $routes = [];
+    protected  $params = [];
+
+    /**
+     *  Construct, and preloading
+     */
 
     function __construct() {
+      $this->splitUrl();
+      
+    }
+
+    /**
+     *  cutted url on controller and action
+     */
+
+
+    public function splitUrl() {
         $arr = require 'config/routerConfig.php';
         
         foreach($arr as $key => $val){
             $this->add($key, $val);
          
         }
-      
-    }
-  
+       
+     }
+ 
+    /**
+     *  adding in vars
+     *  @param $string
+     *  @return void
+     */
 
-    public function add($route, $params){
+    public function add($route, $params) {
        $route = '#^'. $route .'$#';
        $this->routes[$route] = $params;
       
     }
 
+    /**
+     *  matching is existing route or not
+     *  @return boolean
+     */
 
-    public function match(){
+     public function match() {
         $url = trim($_SERVER['REQUEST_URI'], '/');
         
         foreach ($this->routes as $route => $params) {
@@ -43,8 +75,12 @@ class Router{
 
     }
 
+    /**
+     *  running(method for call that is avelible out)
+     *  @return void
+     */
 
-    public function run(){
+    public function run() {
         if ($this->match()) {
             $path = 'app\admin\controllers\\'.ucfirst($this->params['controller']).'Controller';
             if (class_exists($path)) {

@@ -10,8 +10,8 @@ return [
 //* Admin Routes 
 //*************************************************************************
 	'' => [
-		'controller' => 'initialization',
-		'action' => 'index',
+		'controller' => 'admin',
+		'action' => 'init',
 	],
 
 	'register' => [
@@ -23,6 +23,12 @@ return [
 		'controller' => 'admin',
 		'action' => 'login',
 	],
+
+	'admin' => [
+		'controller' => 'admin',
+		'action' => 'index',
+	],
+
 
 	'admin/logout' => [
 		'controller' => 'admin',

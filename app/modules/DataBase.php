@@ -4,10 +4,18 @@
 //*************************************************************************
 //* db classes with methods
 //*************************************************************************
-
+//*************************************************************************
+//* namespaces
+//*************************************************************************
 namespace app\modules;
 
+
+//*************************************************************************
+//* class loading
+//*************************************************************************
 use PDO;
+
+
 
 class DataBase {
 
@@ -20,11 +28,16 @@ class DataBase {
 	 /**
      *  Construct, create opject of PDO class
      */
+	
 	public function __construct() {
 		$this->connect();
 		$this->defaultSetting();
 
 	}
+
+	/**
+     *  default settings for PDO
+     */
 
 	private function defaultSetting () {
 		// set default setting database
@@ -54,7 +67,7 @@ class DataBase {
      * exec query statement
      */
 
-    public function query($sql, $params = []) {
+    public function query(string $sql, array $params = []) {
 		$stmt = $this->db->prepare($sql);
 		if (!empty($params)) {
 			foreach ($params as $key => $val) {
@@ -69,7 +82,7 @@ class DataBase {
      * row statement
      */
 	
-	public function row($sql, $params = []) {
+	public function row(string $sql, array $params = []) {
 		$result = $this->query($sql, $params);
 		return $result->fetchAll(PDO::FETCH_ASSOC);
 	} 
@@ -78,7 +91,7 @@ class DataBase {
      * columnstatement
      */
 	
-	public  function column($sql, $params = []) {
+	public  function column(string $sql, array $params = []) {
 		$result = $this->query($sql, $params);
 		return $result->fetchColumn();
 	}

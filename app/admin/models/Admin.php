@@ -1,31 +1,27 @@
 <?php
 //*************************************************************************
-//* Class  model
+//* main model
 //*************************************************************************
 //*************************************************************************
 //* namespaces
 //*************************************************************************
-namespace app\core;
+namespace app\admin\models;
 
 //*************************************************************************
 //* class loading
 //*************************************************************************
-use app\modules\DataBase;
+use app\core\Model;
 
-abstract class Model{
 
-	/**
+
+class Admin extends Model{
+    /**
      * @var
      */
 
-    public $db;
-	
-	 /**
-     *  Construct, and preloading
-     */
-	
-	public function __construct() {
-		$this->db = new DataBase;
-        
-	}
+    public function getNews() {
+        $result = $this->db->row('SELECT title, body FROM news');
+	    debug($result);
+    }
+
 }
