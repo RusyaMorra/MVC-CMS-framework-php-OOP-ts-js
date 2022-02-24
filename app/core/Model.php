@@ -25,7 +25,7 @@ abstract class Model{
      */
 	
 	public function __construct() {
-		$this->db = new DataBase;
+		$this->db = DataBase::getInstance();
         
 	}
 }

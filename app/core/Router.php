@@ -17,7 +17,8 @@ class Router{
     /**
      * @var
      */
-
+    static private $_instance = null;
+    public $hair = 'green';
     protected  $routes = [];
     protected  $params = [];
 
@@ -28,6 +29,19 @@ class Router{
     function __construct() {
       $this->splitUrl();
       
+    }
+
+     /**
+     *  singleton
+     */
+
+     static public function getInstance(){
+         if(self::$_instance == null){
+            return self::$_instance = new self;
+            
+         }
+
+         return self::$_instance;
     }
 
     /**

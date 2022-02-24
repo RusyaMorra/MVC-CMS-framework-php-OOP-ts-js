@@ -22,7 +22,9 @@ class DataBase {
     /**
      * @var
      */
-    
+	static private $_instance = null;
+
+	
 	protected $db;
 	
 	 /**
@@ -34,6 +36,19 @@ class DataBase {
 		$this->defaultSetting();
 
 	}
+
+	/**
+     *  singleton
+     */
+
+	static public function getInstance(){
+		if(self::$_instance == null){
+		   return self::$_instance = new self;
+		   
+		}
+
+		return self::$_instance;
+   }
 
 	/**
      *  default settings for PDO

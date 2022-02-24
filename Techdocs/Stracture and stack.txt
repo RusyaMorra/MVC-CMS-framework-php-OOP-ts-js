@@ -30,6 +30,14 @@ frontend control center (admin panel){
 2)connecting and implementing templates and plugins.
 
 3)Testing{
+-для всяких библиотек и фреимворком есть testing library
+-unit
+-скриншотные тесты
+-интеграционные тесты -- storybook + loki для регресионого тестирования что бы убедиться не сломалил мы верстку в том или ином компоненте
+-e2e -- webdriverIO- вундоментальное решение для е2е тестов охватывает большое количесвто библиотек и фреимворков таких как (cypress, pupperteer, hermione итд)
+-jest
+-php unit
+
 
 }
 
