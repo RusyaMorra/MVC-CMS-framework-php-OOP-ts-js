@@ -10,7 +10,7 @@ namespace app\core;
 //*************************************************************************
 //* class loading
 //*************************************************************************
-use app\modules\DataBase;
+use app\database\DataBaseORM;
 
 abstract class Model{
 
@@ -25,7 +25,7 @@ abstract class Model{
      */
 	
 	public function __construct() {
-		$this->db = DataBase::getInstance();
+		$this->db = DataBaseORM::getInstance();
         
 	}
 }

@@ -1,0 +1,12 @@
+@use "sass:math";
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-arrow-up {
+    width: math.div(32, 32) * 1em;
+}

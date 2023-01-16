@@ -1,6 +1,10 @@
 <?php
 //defined('VG_ACCESS',true); // denied access to other files ecxept index.php
-session_start();// session on
+
+require "app/core/Framework.class.php";
+$initialization = Framework::getInstance();
+$initialization ->run();
+//session_start();// session on
 //*************************************************************************
 //* Enrty point index.php
 //*************************************************************************
@@ -14,7 +18,7 @@ session_start();// session on
 //* libs
 //*************************************************************************
 require_once 'libs/debug.php';
-require_once 'libs/autoClasses.php';
+
 
 //*************************************************************************
 //* file connections 

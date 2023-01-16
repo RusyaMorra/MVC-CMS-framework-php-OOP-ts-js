@@ -51,9 +51,13 @@ abstract class Controller{
      */
 
     public function startAclChecking() {
+       
         if (!$this->checkAcl()) {
-			View::errorCode(403);
-		}
+            define("ACCESS", 'denied');
+			
+		}else{
+            define("ACCESS", "available");
+        }
     }
 
      /**
@@ -62,12 +66,12 @@ abstract class Controller{
      */
 
     public function checkAcl() : bool {
-		$this->acl = require 'acl/'.$this->route['controller'].'.php';
+       $this->acl = require 'acl/'.$this->route['controller'].'.php';
 		if ($this->isAcl('all')) {
-            debug($this->acl);
-            return true ;
+           return true ;
 		}
 		elseif (isset($_SESSION['authorize']['id']) and $this->isAcl('authorize')) {
+         
 			return true;
 		}
 		elseif (!isset($_SESSION['authorize']['id']) and $this->isAcl('guest')) {

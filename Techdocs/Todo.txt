@@ -1,18 +1,7 @@
-1)Add - twig
 
-2)Types php ++++++++
-3)Separation
- ++++++++
-4)Normalize everything carefully
- ++++++++
-5)testing setup to familiarize yourself
+tscompile.json 
+ts config
+$faker
 
-6)docker
-
-7)assemble the frontend structure
-8)singlton
-9)cron ++++++++
-10)api
-11)manifest.json  ++++++++
-12)tscompile.json 
-13)ts config
+исправить ошибки  c pug 
+сделать расдельные style и json

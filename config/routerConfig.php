@@ -9,32 +9,37 @@ return [
 //*************************************************************************
 //* Admin Routes 
 //*************************************************************************
-	'' => [
-		'controller' => 'admin',
-		'action' => 'init',
-	],
+	
 
 	'register' => [
-		'controller' => 'admin',
+		'controller' => 'Account',
 		'action' => 'register',
 	],
 
 	'login' => [
-		'controller' => 'admin',
+		'controller' => 'Account',
+		'action' => 'login',
+	],
+	'changepassword' => [
+		'controller' => 'Account',
 		'action' => 'login',
 	],
 
-	'admin' => [
+	'dashboard' => [
+		'controller' => 'admin',
+		'action' => 'dashboardInit',
+	],
+	'dashboard/profile' => [
 		'controller' => 'admin',
 		'action' => 'index',
 	],
 
 
-	'admin/logout' => [
-		'controller' => 'admin',
+	'dashboard/logout' => [
+		'controller' => 'Account',
 		'action' => 'logout',
 	],
-	'admin/add' => [
+	'dashboard/add' => [
 		'controller' => 'admin',
 		'action' => 'logout',
 	],
@@ -43,7 +48,7 @@ return [
 //* User Routes 
 //*************************************************************************
 	
-	'home' => [
+	'' => [
 		'controller' => 'main',
 		'action' => 'home',
 	],

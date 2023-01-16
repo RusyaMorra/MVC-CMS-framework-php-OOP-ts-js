@@ -15,13 +15,14 @@ use app\core\Model;
 
 
 class Admin extends Model{
+    
     /**
      * @var
      */
 
     public function getNews() {
         $result = $this->db->row('SELECT title, body FROM news');
-	    debug($result);
+	   // debug($result);
     }
 
 }

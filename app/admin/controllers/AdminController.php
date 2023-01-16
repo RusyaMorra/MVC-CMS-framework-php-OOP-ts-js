@@ -20,33 +20,11 @@ class AdminController extends Controller{
     /**
      *  init action starts init page processing
      */
-    public function initAction(){
-        $result = $this->model->getNews();
-
-        $vars =[
-            'news' => $result
-        ];
-        $this->views->renderAdmin('Добро пожаловать', $vars);
+    public function dashboardInitAction(){
+       
+        $this->views->renderAdmin('Админка');
         
       
-    }
-
-    /**
-     * register action starts register page processing
-     */
-
-    public function registerAction(){
-        $this->views->renderAdmin('Вход');
-        
-        
-    }
-
-     /**
-     *  login action starts login page processing
-     */
-
-    public function loginAction(){
-        $this->views->renderAdmin('Регистрация');
     }
 
 

@@ -12,9 +12,12 @@ return [
 	'authorize' => [
 		'register',
 		'login',
+		'profile'
 	],
 	'guest' => [
-		
+		'register',
+		'login',
+		'init'
 	],
 	'admin' => [
 		//

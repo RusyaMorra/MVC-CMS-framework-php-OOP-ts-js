@@ -1,0 +1,189 @@
+//size
+@mixin titles($_size,$_font_fam) {
+    font-size:$_size ;
+    font-family: $_font_fam;
+}
+
+
+//justify
+@mixin push--auto {
+    margin: {
+     left: auto;
+     right: auto;
+    }
+}
+
+//для before и after
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+  }
+
+//Мы используем этот миксин для создания масштабируемых элементов(обычно изображения/картинки заднего фона), чтобы поддерживать соотношение.
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+     &:before {
+      @include pseudo($pos: relative);
+      width: 100%;
+      padding-top: $padding;
+     }
+    } @else {
+     padding-top: $padding;
+    }
+}
+
+//для создания треугольников
+
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+    @include pseudo($pos: $position);
+    width: 0;
+    height: 0;
+    @if $round {
+      border-radius: 3px;
+    }
+    @if $direction == down {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-top: $size solid $color;
+      margin-top: 0 - round( $size / 2.5 );
+    } @else if $direction == up {
+      border-left: $size solid transparent;
+      border-right: $size solid transparent;
+      border-bottom: $size solid $color;
+      margin-bottom: 0 - round( $size / 2.5 );
+    } @else if $direction == right {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent;
+      border-left: $size solid $color;
+      margin-right: -$size;
+    } @else if  $direction == left {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent;
+      border-right: $size solid $color;
+      margin-left: -$size;
+    }
+  }
+
+
+
+
+// для шрифтов
+@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+
+
+
+// миксин для плейсхолдеров
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+
+
+/***
+*для медиазапросов
+***/
+$breakpoints: (
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+   $width: map_get($breakpoints, $width);
+   @if $type == max {
+    $width: $width - 1px;
+   }
+   @media only screen and (#{$type}-width: $width) {
+    @content;
+   }
+  }
+}
+
+//пример использования
+.site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+     padding-top: 4rem;
+     font-size: 2.4rem;
+    }
+}
+
+
+//для z-index
+@function z($name) {
+    @if index($z-indexes, $name) {
+     @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+     @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+     @return null;
+    }
+  }
+  $z-indexes: (
+    "outdated-browser",
+    "modal",
+    "site-header",
+    "page-wrapper",
+    "site-footer"
+  );
+
+
+//для усечений
+
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+//для адаптива
+
+@mixin for-phone-only {
+  @media (max-width: 400px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (max-width: 600px) { @content; }
+}
+
+
+@mixin for-tablet-landscape-up {
+  @media (max-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (max-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up4 {
+  @media (max-width: 1440px) { @content; }
+}
+@mixin for-big-desktop-up3 {
+  @media (max-width: 1500px) { @content; }
+}
+@mixin for-big-desktop-up2 {
+  @media (max-width: 1750px) { @content; }
+}
+@mixin for-big-desktop-up1 {
+  @media (max-width: 1800px) { @content; }
+}

@@ -11,8 +11,5 @@
             "name": "Rusya Morra",
             "email": "muso-123@mail.com"
         }
-    ],
-    "require": {
-        "twig/twig": "^3.3"
-    }
+    ]
 }

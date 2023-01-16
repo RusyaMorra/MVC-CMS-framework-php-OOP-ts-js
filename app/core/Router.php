@@ -18,7 +18,6 @@ class Router{
      * @var
      */
     static private $_instance = null;
-    public $hair = 'green';
     protected  $routes = [];
     protected  $params = [];
 
@@ -54,7 +53,7 @@ class Router{
         
         foreach($arr as $key => $val){
             $this->add($key, $val);
-         
+           
         }
        
      }
@@ -102,6 +101,8 @@ class Router{
                 if (method_exists($path, $action)) {
                     $controller = new $path($this->params);
                     $controller->$action($this->params);
+                    
+                    
                 } else {
                     View::errorCode(404);
                 }
