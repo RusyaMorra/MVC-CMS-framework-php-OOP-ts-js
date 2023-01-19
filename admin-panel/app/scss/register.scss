@@ -20,7 +20,7 @@
 /**
  * parts
  */
- @import './login-styles/_login-base';
+ @import './register-styles/_register-base';
 
 
 
@@ -29,6 +29,15 @@
  * Components
  */
  @import '../components/_components.scss'; 
+
+
+/**
+ * utils
+ */
+ @import './scss-modules/_util'; 
+
+
+
 
 
 

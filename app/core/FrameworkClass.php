@@ -6,7 +6,7 @@
 
 
 
-class Framework {
+class FrameworkClass {
 
      /**
      * @var

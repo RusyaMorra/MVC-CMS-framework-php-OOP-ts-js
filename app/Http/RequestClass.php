@@ -11,7 +11,7 @@
  * This file is part of mvc-rest-api for PHP.
  *
  */
-namespace modules\Http;
+namespace app\Http;
 
 //*************************************************************************
 //* class loading
@@ -26,7 +26,7 @@ namespace modules\Http;
  *
  * @package Http
  */
-class Request {
+class RequestClass {
 
     /**
      *  Get COOKIE Super Global

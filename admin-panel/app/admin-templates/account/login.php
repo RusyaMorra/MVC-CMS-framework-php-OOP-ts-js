@@ -20,34 +20,34 @@
     <link rel="stylesheet" type="text/css" href="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/animsition/css/animsition.min.css">
     <link rel="stylesheet" type="text/css" href="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/select2/select2.min.css">
     <link rel="stylesheet" type="text/css" href="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" type="text/css" href="<? echo APP_ADMIN_PANEL_PATH; ?>css/util.css">
-    <meta name="robots" content="noindex, follow">
   </head>
-  <body class="App"></body>
+  <link rel="stylesheet" href="<? echo APP_ADMIN_PANEL_PATH; ?>assets/css/login.min.css">
+  <body class="App">
+    <header class="header"></header>
+    <main class="container-login100" style="background-image: url('<? echo APP_ADMIN_PANEL_PATH; ?>assets/images/bg-01.jpg');">
+      <div class="wrap-login100">
+        <form class="login100-form validate-form"><span class="login100-form-logo"><i class="zmdi zmdi-landscape"></i></span><span class="login100-form-title p-b-34 p-t-27">Login</span>
+          <div class="wrap-input100 validate-input" data-validate="Enter username">
+            <input class="input100" type="text" name="username" placeholder="Имя пользователя или Email"><span class="focus-input100" data-placeholder=""></span>
+          </div>
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+            <input class="input100" type="password" name="pass" placeholder="Password"><span class="focus-input100" data-placeholder=""></span>
+          </div>
+          <div class="contact100-form-checkbox">
+            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+            <label class="label-checkbox100" for="ckb1">Запомнить меня</label>
+          </div>
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn">Войти</button>
+          </div>
+          <div class="text-center p-t-90"><a class="txt1" href="#">Забыли пороль?<br></a><a class="txt1" href="http://technohubdevelopment/register">Зарегистрироваться</a></div>
+        </form>
+      </div>
+      <div id="dropDownSelect1"></div>
+    </main>
+    <script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/bootstrap/js/popper.js"></script>
+    <script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<? echo APP_ADMIN_PANEL_PATH; ?>assets/js/bandle.min.js"></script>
+  </body>
 </html>
-<header class="header"></header>
-<main class="container-login100" style="background-image: url('<? echo APP_ADMIN_PANEL_PATH; ?>assets/images/bg-01.jpg');">
-  <div class="wrap-login100">
-    <form class="login100-form validate-form"><span class="login100-form-logo"><i class="zmdi zmdi-landscape"></i></span><span class="login100-form-title p-b-34 p-t-27">Log in</span>
-      <div class="wrap-input100 validate-input" data-validate="Enter username">
-        <input class="input100" type="text" name="username" placeholder="Username"><span class="focus-input100" data-placeholder=""></span>
-      </div>
-      <div class="wrap-input100 validate-input" data-validate="Enter password">
-        <input class="input100" type="password" name="pass" placeholder="Password"><span class="focus-input100" data-placeholder=""></span>
-      </div>
-      <div class="contact100-form-checkbox">
-        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-        <label class="label-checkbox100" for="ckb1">Remember me</label>
-      </div>
-      <div class="container-login100-form-btn">
-        <button class="login100-form-btn">Login</button>
-      </div>
-      <div class="text-center p-t-90"><a class="txt1" href="#">Forgot Password?</a></div>
-    </form>
-  </div>
-  <div id="dropDownSelect1"></div>
-</main>
-<script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/jquery/jquery-3.2.1.min.js"></script>
-<script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/bootstrap/js/popper.js"></script>
-<script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="<? echo APP_ADMIN_PANEL_PATH; ?>assets/js/bandle.min.js"></script>

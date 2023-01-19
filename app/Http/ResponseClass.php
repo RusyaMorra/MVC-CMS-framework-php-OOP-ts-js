@@ -25,7 +25,7 @@ namespace modules\Http;
  *
  * @package Http
  */
-class Response {
+class ResponseClass {
 
     /**
      * @var array

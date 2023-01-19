@@ -1,8 +1,8 @@
 <?php
 //defined('VG_ACCESS',true); // denied access to other files ecxept index.php
 
-require "app/core/Framework.class.php";
-$initialization = Framework::getInstance();
+require "app/core/FrameworkClass.php";
+$initialization = FrameworkClass::getInstance();
 $initialization ->run();
 //session_start();// session on
 //*************************************************************************

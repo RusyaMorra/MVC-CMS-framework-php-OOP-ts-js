@@ -1,37 +1,46 @@
-//- Include head 
-include ../../pugTemplates/main/head
-include ../../components/header/header
-
-      main.container-login100(style!=`background-image: url('${RootDirectory}assets/images/bg-01.jpg');`)
-        .wrap-login100
-          form.login100-form.validate-form
-            span.login100-form-logo
-              i.zmdi.zmdi-landscape
-            span.login100-form-title.p-b-34.p-t-27
-              | Log in
-            .wrap-input100.validate-input(data-validate='Enter username')
-              input.input100(type='text' name='username' placeholder='Username')
-              span.focus-input100(data-placeholder='')
-            .wrap-input100.validate-input(data-validate='Enter password')
-              input.input100(type='password' name='pass' placeholder='Password')
-              span.focus-input100(data-placeholder='')
-            .contact100-form-checkbox
-              input#ckb1.input-checkbox100(type='checkbox' name='remember-me')
-              label.label-checkbox100(for='ckb1')
-                | Remember me
-            .container-login100-form-btn
-              button.login100-form-btn
-                | Login
-            .text-center.p-t-90
-              a.txt1(href='#')
-                | Forgot Password?
-        #dropDownSelect1
-        
-      script(src!=`${RootDirectory}vendor/jquery/jquery-3.2.1.min.js`)
-      script(src!=`${RootDirectory}vendor/bootstrap/js/popper.js`)
-      script(src!=`${RootDirectory}vendor/bootstrap/js/bootstrap.min.js`)
-      script(src!=`${RootDirectory}assets/js/bandle.min.js`)
+doctype html
+html(lang="ru")
+  //- Include head 
+  include ../../pugTemplates/main/head
+  //-additionally
+  link(rel='stylesheet', href!=`${RootDirectory}assets/css/login.min.css`)
+  //-body-start
+  body(class=pageClass)
+    //-header
+    include ../../components/header/header
+    //-main
+    main.container-login100(style!=`background-image: url('${RootDirectory}assets/images/bg-01.jpg');`)
+      .wrap-login100
+        form.login100-form.validate-form
+          span.login100-form-logo
+            i.zmdi.zmdi-landscape
+          span.login100-form-title.p-b-34.p-t-27
+            | Login
+          .wrap-input100.validate-input(data-validate='Enter username')
+            input.input100(type='text' name='username' placeholder='Имя пользователя или Email')
+            span.focus-input100(data-placeholder='')
+          .wrap-input100.validate-input(data-validate='Enter password')
+            input.input100(type='password' name='pass' placeholder='Password')
+            span.focus-input100(data-placeholder='')
+          .contact100-form-checkbox
+            input#ckb1.input-checkbox100(type='checkbox' name='remember-me')
+            label.label-checkbox100(for='ckb1')
+              | Запомнить меня
+          .container-login100-form-btn
+            button.login100-form-btn
+              | Войти
+          .text-center.p-t-90
+            a.txt1(href='#')
+              | Забыли пороль?
+              br
+            a.txt1(href='http://technohubdevelopment/register')
+              | Зарегистрироваться
+      #dropDownSelect1
+    //-scripts main
+    include ../../pugTemplates/main/scripts
+    //-scripts additionally
+    
       
      
-  
+
 

@@ -15,6 +15,7 @@ use app\core\Controller;
 
 
 
+
 class AccountController extends Controller{ 
 
 
@@ -23,10 +24,12 @@ class AccountController extends Controller{
      * register action starts register page processing
      */
 
-    public function registerAction(){
+    public function registerAction(object $Request){
+
+        
         $this->views->renderAdmin('Регистрация');
         
-        
+        //var_dump($Request->request['email']);
     }
 
      /**

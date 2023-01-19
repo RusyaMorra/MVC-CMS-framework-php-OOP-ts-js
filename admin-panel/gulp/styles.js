@@ -4,6 +4,7 @@ const concat            = require('gulp-concat');                   //Добав
 const scss              = require('gulp-sass')(require('sass'));                     //Добавляем scss
 const autoprefixer      = require('gulp-autoprefixer');             //Добавляем Вендорные префиксы
 //const browserSync       = require('browser-sync').create();         //Добавляем автообнавление браузера
+const rename = require('gulp-rename');
 
 
 const task  =   require('./browserSync');        //task browserSync
@@ -19,10 +20,13 @@ module.exports = {
     styles:function (){
         return src(serverPath)                                 //От куда берем...
             .pipe(scss({outputStyle: 'compressed'}))           //Что делаем(сжимаем)
-            .pipe(concat('style.min.css'))                     //Конкатинируем
+           // .pipe(concat('style.min.css'))                     //Конкатинируем
             .pipe(autoprefixer({
                 overrideBrowserslist: ['last 10 version'],     // Для 10 последних версий
                 grid:true
+            }))
+            .pipe(rename({
+                extname: '.min.css'
             }))
             .pipe(dest(output))                                //Куда ложем
             .pipe(browserSync.stream())                        //Стриминг

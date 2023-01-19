@@ -11,6 +11,8 @@ namespace app\core;
 //* class loading
 //*************************************************************************
 use app\core\View;
+use app\Http\RequestClass;
+
 
 class Router{
 
@@ -100,7 +102,7 @@ class Router{
                 $action = $this->params['action'].'Action';
                 if (method_exists($path, $action)) {
                     $controller = new $path($this->params);
-                    $controller->$action($this->params);
+                    $controller->$action(new RequestClass);
                     
                     
                 } else {
