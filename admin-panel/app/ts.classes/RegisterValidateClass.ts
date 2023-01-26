@@ -1,22 +1,39 @@
-
-
-
+/*
+/ registration class, created for handle inputs
+*/
 
 class RegisterValidateClass {
   
-    name: string | undefined;
-    age: number | undefined;
-    print(){
-        console.log(`name: ${this.name}  age: ${this.age}`);
+    public form: HTMLInputElement | undefined;
+    public email: string | undefined;
+    public username: string | undefined;
+    public phone: number | undefined;
+    public password: string | undefined;
+    public passwordRepeat: string | undefined;
+
+    constructor(validationFields: HTMLInputElement){
+       this.form = validationFields;
+       this.PreventForm();
     }
-    toString(): string{
-        return `${this.name}: ${this.age}`;
+
+
+    private PreventForm():void{
+        this.form?.addEventListener('submit', function(event: SubmitEvent){
+            console.log("me and all my relatives are owned by China");
+            event.preventDefault();
+        }) 
     }
+
+    private extractFields():any{
+        return this.form 
+    }
+
+
+    
 }
  
-let tom = new RegisterValidateClass();
-tom.name = "Tom";
-tom.age = 36;
-tom.print();                    // name: Tom  age: 36
+
+
+
+let tom = new RegisterValidateClass((document.querySelector('.validate-form') as HTMLInputElement));
  
-console.log(tom.toString());    // Tom: 36

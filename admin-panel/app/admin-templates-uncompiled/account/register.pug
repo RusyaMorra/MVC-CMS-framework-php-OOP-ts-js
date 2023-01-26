@@ -4,8 +4,8 @@ html(lang="ru")
   include ../../pugTemplates/main/head
   //-additionally
   link(rel='stylesheet', href!=`${RootDirectory}assets/css/register.min.css`)
-  link(rel='stylesheet' type='text/css' href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
-  link(rel='stylesheet' type='text/css' href='fonts/Linearicons-Free-v1.0.0/icon-font.min.css')
+  link(rel='stylesheet' type='text/css' href!=`${RootDirectory}assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css`)
+  link(rel='stylesheet' type='text/css' href!=`${RootDirectory}assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css`)
   //-body-start
   body(class=pageClass)
     //-header
@@ -26,15 +26,15 @@ html(lang="ru")
                     span.txt1
                         | Регистрация через Email
                     .wrap-input100.validate-input.m-b-16(data-validate='Please enter email: ex@abc.xyz')
-                    input.input100(type='text' name='email' placeholder='Email')
-                    input.input100(type='text' name='userName' placeholder='Имя пользователя')
-                    input.input100(type='text' name='number' placeholder='+7(xxx)-xxx-xxxx')
+                    input.input100(type='text' class= "email32fg3wvf32" name='email' placeholder='Email')
+                    input.input100(type='text' class= "userName32fg3wvf32" name='userName' placeholder='Имя пользователя')
+                    input.input100(type='text' class= "number32fg3wvf32" name='number' placeholder='+7(xxx)-xxx-xxxx')
                     //- span.focus-input100
                     //- .wrap-input100.validate-input.m-b-20(data-validate='Please enter password')
                     span.btn-show-pass
                         i.fa.fa.fa-eye
-                    input.input100(type='password' name='pass' placeholder='Пороль')
-                    input.input100(type='password' name='pass' placeholder='Повторите пороль')
+                    input.input100(type='password' class= "pass32fg3wvf32" name='pass' placeholder='Пороль')
+                    input.input100(type='password' class= "pass232fg3wvf32" name='pass2' placeholder='Повторите пороль')
                     span.focus-input100
                     .container-login100-form-btn
                     button.login100-form-btn(type='submit')
@@ -46,5 +46,6 @@ html(lang="ru")
                         | Войти в систему
             //-scripts main
             include ../../pugTemplates/main/scripts
-            //-scripts additionally    
+            //-scripts additionally
+            script(src!=`${RootDirectory}ts.classes/RegisterValidateClass.js`)    
             

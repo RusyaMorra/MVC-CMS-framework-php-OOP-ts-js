@@ -22,8 +22,8 @@
     <link rel="stylesheet" type="text/css" href="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/daterangepicker/daterangepicker.css">
   </head>
   <link rel="stylesheet" href="<? echo APP_ADMIN_PANEL_PATH; ?>assets/css/register.min.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="<? echo APP_ADMIN_PANEL_PATH; ?>assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="<? echo APP_ADMIN_PANEL_PATH; ?>assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
   <body class="App">
     <header class="header"></header>
     <div class="limiter">
@@ -32,11 +32,11 @@
           <form class="login100-form validate-form" action="http://technohubdevelopment/register" method="POST"><span class="login100-form-title p-b-40">Регистрация</span><a class="btn-login-with bg1 m-b-10" href="#"><i class="fa fa-facebook-official"></i>Регистрация через фейсбук</a><a class="btn-login-with bg2" href="#"><i class="fa fa-twitter"></i>Регистрация через твиттер</a>
             <div class="text-center p-t-55 p-b-30"></div><span class="txt1">Регистрация через Email</span>
             <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter email: ex@abc.xyz"></div>
-            <input class="input100" type="text" name="email" placeholder="Email">
-            <input class="input100" type="text" name="userName" placeholder="Имя пользователя">
-            <input class="input100" type="text" name="number" placeholder="+7(xxx)-xxx-xxxx"><span class="btn-show-pass"><i class="fa fa fa-eye"></i></span>
-            <input class="input100" type="password" name="pass" placeholder="Пороль">
-            <input class="input100" type="password" name="pass" placeholder="Повторите пороль"><span class="focus-input100"></span>
+            <input class="input100 email32fg3wvf32" type="text" name="email" placeholder="Email">
+            <input class="input100 userName32fg3wvf32" type="text" name="userName" placeholder="Имя пользователя">
+            <input class="input100 number32fg3wvf32" type="text" name="number" placeholder="+7(xxx)-xxx-xxxx"><span class="btn-show-pass"><i class="fa fa fa-eye"></i></span>
+            <input class="input100 pass32fg3wvf32" type="password" name="pass" placeholder="Пороль">
+            <input class="input100 pass232fg3wvf32" type="password" name="pass2" placeholder="Повторите пороль"><span class="focus-input100"></span>
             <div class="container-login100-form-btn"></div>
             <button class="login100-form-btn" type="submit">Зарегистрироваться</button>
             <div class="flex-col-c p-t-224"></div><span class="txt2 p-b-10">Вы уже зарегистрированы?</span><a class="txt3 bo1 hov1" href="http://technohubdevelopment/login">Войти в систему</a>
@@ -46,6 +46,7 @@
         <script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/bootstrap/js/popper.js"></script>
         <script src="<? echo APP_ADMIN_PANEL_PATH; ?>vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="<? echo APP_ADMIN_PANEL_PATH; ?>assets/js/bandle.min.js"></script>
+        <script src="<? echo APP_ADMIN_PANEL_PATH; ?>ts.classes/RegisterValidateClass.js">   </script>
       </main>
     </div>
   </body>
