@@ -1,6 +1,6 @@
 Style:
 -mvc
-- oop
+-oop
 -design patterns
 -namespaces and autoclasses
 

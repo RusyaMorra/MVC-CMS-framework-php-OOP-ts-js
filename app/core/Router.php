@@ -50,7 +50,7 @@ class Router{
      */
 
 
-    public function splitUrl() {
+    private function splitUrl() {
         $arr = require 'config/routerConfig.php';
         
         foreach($arr as $key => $val){
@@ -66,7 +66,7 @@ class Router{
      *  @return void
      */
 
-    public function add($route, $params) {
+    private function add($route, $params) {
        $route = '#^'. $route .'$#';
        $this->routes[$route] = $params;
       
@@ -77,7 +77,7 @@ class Router{
      *  @return boolean
      */
 
-     public function match() {
+     private function match() {
         $url = trim($_SERVER['REQUEST_URI'], '/');
         
         foreach ($this->routes as $route => $params) {
