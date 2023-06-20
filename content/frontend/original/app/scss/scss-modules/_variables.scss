@@ -1,0 +1,109 @@
+// Font
+$font-family-base: "Roboto", sans-serif;
+$enable-smooth-scroll: false;
+
+/**
+ * Grid system
+ * -----------------------------------------
+ */
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+// Grid containers
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px
+);
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           1.5rem;
+$grid-row-columns:            6;
+
+
+
+
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// fusv-disable
+$grays: (
+	"100": $gray-100,
+	"200": $gray-200,
+	"300": $gray-300,
+	"400": $gray-400,
+	"500": $gray-500,
+	"600": $gray-600,
+	"700": $gray-700,
+	"800": $gray-800,
+	"900": $gray-900
+);
+// fusv-enable
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+
+
+$color_1: white;
+$color_2: #FF9201;
+$color_3: rgba(255, 255, 255, 0.5);
+$color_4: transparent;
+$color_5: gray;
+$color_6: black;
+$color_7: grey;
+$color_8: #f9f1e9;
+$color_9: #E6E6E6;
+$color_10: #d23;
+$background-color_1: rgb(51,51,51);
+$background-color_2: rgb(128, 128, 128);
+$background-color_3: white;
+$background-color_4: #F8EEE4;
+$background-color_5: #2B2B2B;
+$background-color_6: #FF9201;
+$background-color_7: #151515;
+$background-color_8: transparent;
+$background-color_9: rgba(255, 255, 255, 0.2);
+$background-color_10: #333;
+$background-color_11: #000000;
+
+/**
+ * Utilities
+ * -----------------------------------------------------
+ */
+//@import "../../../node_modules/bootstrap/scss/functions";
+//@import "../../../node_modules/bootstrap/scss/variables";
+//@import "../../../node_modules/bootstrap/scss/utilities";
+

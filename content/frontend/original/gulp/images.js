@@ -13,7 +13,7 @@ module.exports = {
         .pipe(imagemin(
             [
                 imagemin.gifsicle({interlaced: true}),
-                imagemin.mozjpeg({quality: 75, progressive: true}),
+                imagemin.mozjpeg({quality: 55, progressive: true}),
                 imagemin.optipng({optimizationLevel: 5}),                   // Оптимизация
                 imagemin.svgo({
                     plugins: [

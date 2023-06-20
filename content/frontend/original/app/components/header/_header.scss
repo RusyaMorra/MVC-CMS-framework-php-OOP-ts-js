@@ -1,0 +1,70 @@
+.background-spot {
+	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 960px;
+}
+.header {
+	width: 100%;
+	height: 100px;
+}
+.main-menu {
+	li {
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 17px;
+		font-weight: 900;
+		a {
+			text-decoration: none;
+			color: $color_1;
+		}
+	}
+	list-style: none;
+}
+.overflow-for-context {
+	width: 100%;
+	height: 960px;
+	background: rgba(0, 0, 0, 0.8);
+}
+.logo {
+	img {
+		width: 310px;
+	}
+}
+.button-offer {
+	height: 25px;
+	padding: 20px 40px 20px 40px;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 900;
+	color: $color_1;
+	font-size: 15px;
+	background: #000000;
+	border: 1px solid #FF9201;
+	border-radius: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.intro-area {
+	height: 80%;
+}
+.intro-text {
+	font-size: 45px;
+	line-height: 56px;
+	font-weight: 900;
+	color: $color_1;
+	span {
+		color: $color_2;
+	}
+}
+.additional-text {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color_3;
+}

@@ -95,9 +95,35 @@ class Router{
      *  @return void
      */
 
-    public function run() {
+    public function adminRun() {
         if ($this->match()) {
             $path = 'app\admin\controllers\\'.ucfirst($this->params['controller']).'Controller';
+            if (class_exists($path)) {
+                $action = $this->params['action'].'Action';
+                if (method_exists($path, $action)) {
+                    $controller = new $path($this->params);
+                    $controller->$action(new RequestClass);
+                    
+                    
+                } else {
+                    View::errorCode(404);
+                }
+            } else {
+                $this->userRun();
+            }
+        } else {
+            View::errorCode(404);
+        }
+    }
+
+    /**
+     *  running for user urls(method for call that is avelible out)
+     *  @return void
+     */
+
+    public function userRun() {
+        if ($this->match()) {
+            $path = 'app\user\controllers\\'.ucfirst($this->params['controller']).'Controller';
             if (class_exists($path)) {
                 $action = $this->params['action'].'Action';
                 if (method_exists($path, $action)) {
@@ -116,7 +142,7 @@ class Router{
         }
     }
 
-  
+
 }
 
 

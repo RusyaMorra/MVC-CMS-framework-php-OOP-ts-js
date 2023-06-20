@@ -1,24 +1,26 @@
 block variables
     -
-        var baseDir = '../../';
         var pageClass ='App';
-        var RootDirectory = "<? echo APP_ADMIN_PANEL_PATH; ?>";
+        var RootDirectory = "<? echo APP_USER_PATH; ?>";
 
 
-head
-    meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible', content="IE=edge")
-    meta(name='viewport', content='initial-scale=1.0, width=device-width')
-    meta(name='mobile-web-app-capable', content='yes')
-    meta(name='application-name', content="")
-    meta(name='apple-mobile-web-app-capable', content='yes')
-    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
-    meta(name='apple-mobile-web-app-title' content="")
 
 
-    title !{'<?php echo $title; ?>'}
-    link(rel='stylesheet', href!=`${RootDirectory}assets/css/style.min.css`)
 
-  
-    script(src!= `${RootDirectory}assets/js/bandle.min.js`)
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width,initial-scale=1')
+        //- title
+        title !{'<?php echo $title; ?>'}
+        //- inc styles
+        link(rel='stylesheet', href!=`${RootDirectory}vendor/bootstrap/css/bootstrap.min.css`)
+        link(rel='stylesheet', type='text/css', href!=`${RootDirectory}assets/css/main.min.css`)
+        link(rel='stylesheet', type='text/css', href!=`${RootDirectory}vendor/convas/convas-effects.css`)
+        link(rel='stylesheet', type='text/css', href!=`${RootDirectory}vendor/slick-slider/slick.css`)
+       
+        
+        
+        
+    
     

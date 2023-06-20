@@ -68,12 +68,18 @@ class View {
 
     public function renderUser(string $title, array $vars = []) {
         extract($vars); 
-        $path = 'content/frontend/'.$this->path.'.php';
-       if(file_exists($path)){
-            ob_start();
+
+        $path = 'content/frontend/original/app/user-templates/'.$this->path.'.php';
+
+
+        if(file_exists($path)){
             require $path;
+            ob_start();
+                
             $content = ob_get_clean();
-            require 'content/frontend/'.$this->layout. '.php';
+
+        }else{
+            require 'content/frontend/original/app/user-templates/'.$this->layout. '.php';
         }
         
     }
@@ -105,6 +111,7 @@ class View {
         
         exit;
     }
+
 }    
 
 

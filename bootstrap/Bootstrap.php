@@ -12,5 +12,6 @@ use app\core\Router;
 //* starting  Routing
 //*************************************************************************
 $router = Router::getInstance();
-$router->run();
+$router->adminRun();
+
 

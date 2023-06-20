@@ -11,13 +11,13 @@ module.exports = {
 		},
 		src: { // Source files
             root:'app/',
-			pug: 'app/admin-templates-uncompiled/**/*.pug',
-			pugOutPut:'app/admin-templates/',
+			pug: 'app/user-templates-uncompiled/**/*.pug',
+			pugOutPut:'app/user-templates/',
 		    htmlBuildFrom: 'app/*.php',
-			style: 'app/scss/main.scss',
+			style: 'app/scss/**.+(sass|scss)',
 			styleOutput: 'app/assets/css/',
 			styleBuildFrom: 'app/assets/css/style.min.css',
-			img: 'app/assets/images-uncompressed/**/*.+(png|jpg|jpeg|gif)',
+			img: 'app/assets/images-uncompressed/**/**/*.+(png|jpg|jpeg|gif|ico)',
 			js: 'app/assets/js/index.js',
 			jsOutput: 'app/assets/js/',
 			jsBuildFrom: 'app/js/bandle.min.js',
@@ -27,9 +27,9 @@ module.exports = {
 		watch: { // Watch files
 			json: 'app/data/*.json',
 			pug: 'app/**/**/*.pug',
-			style: 'app/scss/**.+(sass|scss)',
+			style: 'app/scss/**/**.+(sass|scss)',
             styleComponents: 'app/components/**/*.+(sass|scss)',
-            js: 'app/js/index.js'
+            js: 'app/assets/js/index.js'
 		},
 		clean: {
 			all: './build'

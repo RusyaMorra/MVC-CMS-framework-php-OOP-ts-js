@@ -51,6 +51,8 @@ class FrameworkClass {
         
 
         define("APP_ADMIN_PANEL_PATH",  'admin-panel/app' . DS2);
+
+        define("APP_USER_PATH",  'content/frontend/original/app' . DS2);
        
         define("APP_PATH", ROOT . 'application' . DS);
 

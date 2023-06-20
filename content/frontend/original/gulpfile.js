@@ -33,4 +33,4 @@
 
 
    exports.build       = series(cleanDist, images/*, build*/);                             //Некий output билда
-   exports.default     = parallel(pugCompile, styles, scripts, browsersync, watching);  //Запускаем паралельно
+   exports.default     = parallel(pugCompile, styles, scripts/*, browsersync*/, watching);  //Запускаем паралельно
