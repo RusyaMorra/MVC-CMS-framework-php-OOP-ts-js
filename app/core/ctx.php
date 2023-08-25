@@ -1,120 +1,95 @@
-import log from '../../log';
-import defaultContainer from './defaultContainer';
-import ProfileService from './ProfileService/ProfileService';
-import {interfaces} from 'inversify/lib/interfaces/interfaces';
-import serviceConstrictors from './serviceConstrictors';
-import {Context, Services} from './types';
-import * as R from 'ramda';
-import {onStart} from '../../systemHooks';
-import {KafkaContext} from '../../clients/kafka/getKafkaContext';
-import {getQueueContext} from '../../clients/queue/getQueueContext';
-import {PrismaClient} from '@prisma/client';
-import {Knex} from 'knex';
-import {Client} from 'pg';
-import {WorkerUtils} from 'graphile-worker';
-import {ElasticClient} from '../../clients/elastic';
-import {UserData} from './ProfileService/BaseProfileService';
+<?php
+//*************************************************************************
+//* ActionSourcesService
+//*************************************************************************
 
-let willRunOnce = true;
+//*************************************************************************
+//* namespaces
+//*************************************************************************
 
-export const createContext = async (container: interfaces.Container = defaultContainer): Promise<Context> => {
-  const close = async () => {
-    await Promise.all([
-      container.unbindAsync('Prisma'),
-      container.unbindAsync('PrismaReadOnly'),
-      container.unbindAsync('Knex'),
-      container.unbindAsync('Postgres'),
-      container.unbindAsync('Kafka'),
-    ]);
-  };
+namespace app\core;
 
-  const [
-    prisma,
-    prismaReadOnly,
-    knex,
-    postgres,
-    elastic,
-    worker,
-    kafka,
-  ] = await Promise.all([
-    container.getAsync<PrismaClient>('Prisma'),
-    container.getAsync<PrismaClient>('PrismaReadOnly'),
-    container.getAsync<Knex>('Knex'),
-    container.getAsync<Client>('Postgres'),
-    container.getAsync<ElasticClient>('Elastic'),
-    container.getAsync<WorkerUtils>('Queue'),
-    container.getAsync<KafkaContext>('Kafka'),
-  ]);
+//require './coreInterfaces/ContextInterface';
+//require './systemHooks';
 
-  const context: Context = {
-    prisma,
-    prismaReadOnly,
-    knex,
-    postgres,
-    worker,
-    elastic,
-    log,
-    close,
-    service: (name: keyof Services) => container.get(name),
-    container,
-    kafka,
-    queue: getQueueContext(kafka),
-  };
 
-  const pairs = R.toPairs(serviceConstrictors);
 
-  for (const [name, constructor] of pairs) {
-    if (!container.isBound(name)) {
-      container.bind(name)
-        .toDynamicValue((ctx) => constructor({
-          ...context,
-          container: ctx.container,
-          service: (name: keyof Services) => ctx.container.get(name),
-        }))
-        .inTransientScope();
+
+
+class Ctx /*implements  ContextInterface*/ {
+
+  /**
+   *@var
+  */
+  static private $_instance = null;
+
+  private  $RedBeanPHP = null;
+  private  $TechnoHubQueryBuilder = null;
+  private  $logs = null;
+  private  $elastic= null;
+  private  $worker = null;
+  private  $kafka = null;
+  private  $queue = null;
+  private  $container = null;
+
+
+  private  $mode = null;
+
+
+
+  /**
+   * there is two mods
+   * 1: open 2: close
+   * and container
+  */
+  public function __construct() {
+
+  }
+
+
+  public function init($mode) {
+    $this->mode = $mode;
+
+  }
+
+  public function createCtx($container) {
+    $this->container = $container;
+    // $this->$CTX['RedBeanPHP'] = $this->container.get('RedBeanPHP');
+    // $this->$CTX['TechnoHubQueryBuilder'] =   $this->container.get('TechnoHubQueryBuilder');
+    // $this->$CTX['logs'] =  $this->container.get('logs');
+    // $this->$CTX['elastic'] =  $this->container.get('elastic');
+    // $this->$CTX['worker'] =  $this->container.get('worker');
+    // $this->$CTX['kafka'] =  $this->container.get('kafka');
+    // $this->$CTX['queue'] =  $this->container.get('queue');
+    // $this->$CTX['container'] =   $this->container.get('container');
+
+  }
+
+  
+  /**
+   *  singleton
+   */
+
+  static public function getInstance(){
+
+    if(self::$_instance == null){
+        return self::$_instance = new self;
+        
     }
+
+    return self::$_instance;
+
   }
 
-  if (willRunOnce) {
-    willRunOnce = false;
-    await onStart(context);
+
+  public function getCtx($name) {
+    echo 123234234;
   }
 
-  return context;
-};
 
-export const createUserAwareContext = (context: Context, userId: number): Context => {
-  const Context = {
-    ...context,
-    userId,
-  };
+  public  function serviceLocator($serviceName){$this->container->DiContainerGet($serviceName);}
 
-  return Context;
-};
 
-export const createUsersAwareContext = async (
-  {userId, managerId}: UserData,
-  container: interfaces.Container = defaultContainer,
-): Promise<Context> => {
-  const child = container.createChild();
 
-  const created = await createContext(child);
 
-  const profile = new ProfileService(created);
-
-  if (userId) {
-    profile.setUserId(userId);
-  }
-
-  if (managerId) {
-    profile.setManagerId(managerId);
-  }
-
-  child.bind<ProfileService>('profile')
-    .toConstantValue(profile);
-
-  return {
-    ...created,
-    container: child,
-  };
-};
+}

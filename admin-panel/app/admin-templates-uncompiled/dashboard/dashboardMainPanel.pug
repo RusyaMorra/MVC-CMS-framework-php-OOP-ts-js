@@ -1,0 +1,647 @@
+doctype html
+html(lang="ru")
+//- Include head 
+include ../../pugTemplates/dashboard/head
+//-body-start
+body(class=pageClass)
+.wrapper
+  nav#sidebar.sidebar.js-sidebar
+    .sidebar-content.js-simplebar
+      a.sidebar-brand(href='index.html')
+        span.align-middle AdminKit
+      ul.sidebar-nav
+        li.sidebar-header.
+          
+          Pages
+          
+        li.sidebar-item.active
+          a.sidebar-link(href='index.html')
+            i.align-middle(data-feather='sliders')
+            |  
+            span.align-middle Dashboard
+        li.sidebar-item
+          a.sidebar-link(href='pages-profile.html')
+            i.align-middle(data-feather='user')
+            |  
+            span.align-middle Profile
+        li.sidebar-item
+          a.sidebar-link(href='pages-sign-in.html')
+            i.align-middle(data-feather='log-in')
+            |  
+            span.align-middle Sign In
+        li.sidebar-item
+          a.sidebar-link(href='pages-sign-up.html')
+            i.align-middle(data-feather='user-plus')
+            |  
+            span.align-middle Sign Up
+        li.sidebar-item
+          a.sidebar-link(href='pages-blank.html')
+            i.align-middle(data-feather='book')
+            |  
+            span.align-middle Blank
+        li.sidebar-header.
+          
+          Tools & Components
+          
+        li.sidebar-item
+          a.sidebar-link(href='ui-buttons.html')
+            i.align-middle(data-feather='square')
+            |  
+            span.align-middle Buttons
+        li.sidebar-item
+          a.sidebar-link(href='ui-forms.html')
+            i.align-middle(data-feather='check-square')
+            |  
+            span.align-middle Forms
+        li.sidebar-item
+          a.sidebar-link(href='ui-cards.html')
+            i.align-middle(data-feather='grid')
+            |  
+            span.align-middle Cards
+        li.sidebar-item
+          a.sidebar-link(href='ui-typography.html')
+            i.align-middle(data-feather='align-left')
+            |  
+            span.align-middle Typography
+        li.sidebar-item
+          a.sidebar-link(href='icons-feather.html')
+            i.align-middle(data-feather='coffee')
+            |  
+            span.align-middle Icons
+        li.sidebar-header.
+          
+          Plugins & Addons
+          
+        li.sidebar-item
+          a.sidebar-link(href='charts-chartjs.html')
+            i.align-middle(data-feather='bar-chart-2')
+            |  
+            span.align-middle Charts
+        li.sidebar-item
+          a.sidebar-link(href='maps-google.html')
+            i.align-middle(data-feather='map')
+            |  
+            span.align-middle Maps
+      .sidebar-cta
+        .sidebar-cta-content
+          strong.d-inline-block.mb-2 Upgrade to Pro
+          .mb-3.text-sm.
+            
+            Are you looking for more components? Check out our premium version.
+            
+          .d-grid
+            a.btn.btn-primary(href='upgrade-to-pro.html') Upgrade to Pro
+  .main
+    nav.navbar.navbar-expand.navbar-light.navbar-bg
+      a.sidebar-toggle.js-sidebar-toggle
+        i.hamburger.align-self-center
+      .navbar-collapse.collapse
+        ul.navbar-nav.navbar-align
+          li.nav-item.dropdown
+            a.nav-icon.dropdown-toggle#alertsDropdown(href='#', data-bs-toggle='dropdown')
+              .position-relative
+                i.align-middle(data-feather='bell')
+                span.indicator 4
+            .dropdown-menu.dropdown-menu-lg.dropdown-menu-end.py-0(aria-labelledby='alertsDropdown')
+              .dropdown-menu-header.
+                
+                4 New Notifications
+                
+              .list-group
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      i.text-danger(data-feather='alert-circle')
+                    .col-10
+                      .text-dark Update completed
+                      .text-muted.small.mt-1 Restart server 12 to complete the update.
+                      .text-muted.small.mt-1 30m ago
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      i.text-warning(data-feather='bell')
+                    .col-10
+                      .text-dark Lorem ipsum
+                      .text-muted.small.mt-1 Aliquam ex eros, imperdiet vulputate hendrerit et.
+                      .text-muted.small.mt-1 2h ago
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      i.text-primary(data-feather='home')
+                    .col-10
+                      .text-dark Login from 192.186.1.8
+                      .text-muted.small.mt-1 5h ago
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      i.text-success(data-feather='user-plus')
+                    .col-10
+                      .text-dark New connection
+                      .text-muted.small.mt-1 Christina accepted your request.
+                      .text-muted.small.mt-1 14h ago
+              .dropdown-menu-footer
+                a.text-muted(href='#') Show all notifications
+          li.nav-item.dropdown
+            a.nav-icon.dropdown-toggle#messagesDropdown(href='#', data-bs-toggle='dropdown')
+              .position-relative
+                i.align-middle(data-feather='message-square')
+            .dropdown-menu.dropdown-menu-lg.dropdown-menu-end.py-0(aria-labelledby='messagesDropdown')
+              .dropdown-menu-header
+                .position-relative.
+                  
+                  4 New Messages
+                  
+              .list-group
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      img.avatar.img-fluid.rounded-circle(src='img/avatars/avatar-5.jpg', alt='Vanessa Tucker')
+                    .col-10.ps-2
+                      .text-dark Vanessa Tucker
+                      .text-muted.small.mt-1 Nam pretium turpis et arcu. Duis arcu tortor.
+                      .text-muted.small.mt-1 15m ago
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      img.avatar.img-fluid.rounded-circle(src='img/avatars/avatar-2.jpg', alt='William Harris')
+                    .col-10.ps-2
+                      .text-dark William Harris
+                      .text-muted.small.mt-1 Curabitur ligula sapien euismod vitae.
+                      .text-muted.small.mt-1 2h ago
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      img.avatar.img-fluid.rounded-circle(src='img/avatars/avatar-4.jpg', alt='Christina Mason')
+                    .col-10.ps-2
+                      .text-dark Christina Mason
+                      .text-muted.small.mt-1 Pellentesque auctor neque nec urna.
+                      .text-muted.small.mt-1 4h ago
+                a.list-group-item(href='#')
+                  .row.g-0.align-items-center
+                    .col-2
+                      img.avatar.img-fluid.rounded-circle(src='img/avatars/avatar-3.jpg', alt='Sharon Lessman')
+                    .col-10.ps-2
+                      .text-dark Sharon Lessman
+                      .text-muted.small.mt-1 Aenean tellus metus, bibendum sed, posuere ac, mattis non.
+                      .text-muted.small.mt-1 5h ago
+              .dropdown-menu-footer
+                a.text-muted(href='#') Show all messages
+          li.nav-item.dropdown
+            a.nav-icon.dropdown-toggle.d-inline-block.d-sm-none(href='#', data-bs-toggle='dropdown')
+              i.align-middle(data-feather='settings')
+            a.nav-link.dropdown-toggle.d-none.d-sm-inline-block(href='#', data-bs-toggle='dropdown')
+              img.avatar.img-fluid.rounded.me-1(src='img/avatars/avatar.jpg', alt='Charles Hall')
+              |  
+              span.text-dark Charles Hall
+            .dropdown-menu.dropdown-menu-end
+              a.dropdown-item(href='pages-profile.html')
+                i.align-middle.me-1(data-feather='user')
+                |  Profile
+              a.dropdown-item(href='#')
+                i.align-middle.me-1(data-feather='pie-chart')
+                |  Analytics
+              .dropdown-divider
+              a.dropdown-item(href='index.html')
+                i.align-middle.me-1(data-feather='settings')
+                |  Settings & Privacy
+              a.dropdown-item(href='#')
+                i.align-middle.me-1(data-feather='help-circle')
+                |  Help Center
+              .dropdown-divider
+              a.dropdown-item(href='#') Log out
+    main.content
+      .container-fluid.p-0
+        h1.h3.mb-3
+          strong Analytics
+          |  Dashboard
+        .row
+          .col-xl-6.col-xxl-5.d-flex
+            .w-100
+              .row
+                .col-sm-6
+                  .card
+                    .card-body
+                      .row
+                        .col.mt-0
+                          h5.card-title Sales
+                        .col-auto
+                          .stat.text-primary
+                            i.align-middle(data-feather='truck')
+                      h1.mt-1.mb-3 2.382
+                      .mb-0
+                        span.text-danger
+                          i.mdi.mdi-arrow-bottom-right
+                          |  -3.65% 
+                        span.text-muted Since last week
+                  .card
+                    .card-body
+                      .row
+                        .col.mt-0
+                          h5.card-title Visitors
+                        .col-auto
+                          .stat.text-primary
+                            i.align-middle(data-feather='users')
+                      h1.mt-1.mb-3 14.212
+                      .mb-0
+                        span.text-success
+                          i.mdi.mdi-arrow-bottom-right
+                          |  5.25% 
+                        span.text-muted Since last week
+                .col-sm-6
+                  .card
+                    .card-body
+                      .row
+                        .col.mt-0
+                          h5.card-title Earnings
+                        .col-auto
+                          .stat.text-primary
+                            i.align-middle(data-feather='dollar-sign')
+                      h1.mt-1.mb-3 $21.300
+                      .mb-0
+                        span.text-success
+                          i.mdi.mdi-arrow-bottom-right
+                          |  6.65% 
+                        span.text-muted Since last week
+                  .card
+                    .card-body
+                      .row
+                        .col.mt-0
+                          h5.card-title Orders
+                        .col-auto
+                          .stat.text-primary
+                            i.align-middle(data-feather='shopping-cart')
+                      h1.mt-1.mb-3 64
+                      .mb-0
+                        span.text-danger
+                          i.mdi.mdi-arrow-bottom-right
+                          |  -2.25% 
+                        span.text-muted Since last week
+          .col-xl-6.col-xxl-7
+            .card.flex-fill.w-100
+              .card-header
+                h5.card-title.mb-0 Recent Movement
+              .card-body.py-3
+                .chart.chart-sm
+                  canvas#chartjs-dashboard-line
+        .row
+          .col-12.col-md-6.col-xxl-3.d-flex.order-2.order-xxl-3
+            .card.flex-fill.w-100
+              .card-header
+                h5.card-title.mb-0 Browser Usage
+              .card-body.d-flex
+                .align-self-center.w-100
+                  .py-3
+                    .chart.chart-xs
+                      canvas#chartjs-dashboard-pie
+                  table.table.mb-0
+                    tbody
+                      tr
+                        td Chrome
+                        td.text-end 4306
+                      tr
+                        td Firefox
+                        td.text-end 3801
+                      tr
+                        td IE
+                        td.text-end 1689
+          .col-12.col-md-12.col-xxl-6.d-flex.order-3.order-xxl-2
+            .card.flex-fill.w-100
+              .card-header
+                h5.card-title.mb-0 Real-Time
+              .card-body.px-4
+                #world_map(style='height:350px;')
+          .col-12.col-md-6.col-xxl-3.d-flex.order-1.order-xxl-1
+            .card.flex-fill
+              .card-header
+                h5.card-title.mb-0 Calendar
+              .card-body.d-flex
+                .align-self-center.w-100
+                  .chart
+                    #datetimepicker-dashboard
+        .row
+          .col-12.col-lg-8.col-xxl-9.d-flex
+            .card.flex-fill
+              .card-header
+                h5.card-title.mb-0 Latest Projects
+              table.table.table-hover.my-0
+                thead
+                  tr
+                    th Name
+                    th.d-none.d-xl-table-cell Start Date
+                    th.d-none.d-xl-table-cell End Date
+                    th Status
+                    th.d-none.d-md-table-cell Assignee
+                tbody
+                  tr
+                    td Project Apollo
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-success Done
+                    td.d-none.d-md-table-cell Vanessa Tucker
+                  tr
+                    td Project Fireball
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-danger Cancelled
+                    td.d-none.d-md-table-cell William Harris
+                  tr
+                    td Project Hades
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-success Done
+                    td.d-none.d-md-table-cell Sharon Lessman
+                  tr
+                    td Project Nitro
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-warning In progress
+                    td.d-none.d-md-table-cell Vanessa Tucker
+                  tr
+                    td Project Phoenix
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-success Done
+                    td.d-none.d-md-table-cell William Harris
+                  tr
+                    td Project X
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-success Done
+                    td.d-none.d-md-table-cell Sharon Lessman
+                  tr
+                    td Project Romeo
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-success Done
+                    td.d-none.d-md-table-cell Christina Mason
+                  tr
+                    td Project Wombat
+                    td.d-none.d-xl-table-cell 01/01/2023
+                    td.d-none.d-xl-table-cell 31/06/2023
+                    td
+                      span.badge.bg-warning In progress
+                    td.d-none.d-md-table-cell William Harris
+          .col-12.col-lg-4.col-xxl-3.d-flex
+            .card.flex-fill.w-100
+              .card-header
+                h5.card-title.mb-0 Monthly Sales
+              .card-body.d-flex.w-100
+                .align-self-center.chart.chart-lg
+                  canvas#chartjs-dashboard-bar
+    footer.footer
+      .container-fluid
+        .row.text-muted
+          .col-6.text-start
+            p.mb-0
+              a.text-muted(href='https://adminkit.io/', target='_blank')
+                strong AdminKit
+              |  - 
+              a.text-muted(href='https://adminkit.io/', target='_blank')
+                strong Bootstrap Admin Template
+              |  ©
+
+          .col-6.text-end
+            ul.list-inline
+              li.list-inline-item
+                a.text-muted(href='https://adminkit.io/', target='_blank') Support
+              li.list-inline-item
+                a.text-muted(href='https://adminkit.io/', target='_blank') Help Center
+              li.list-inline-item
+                a.text-muted(href='https://adminkit.io/', target='_blank') Privacy
+              li.list-inline-item
+                a.text-muted(href='https://adminkit.io/', target='_blank') Terms
+script(src='js/app.js')
+script.
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+  			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+  			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+  			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+  			// Line chart
+  			new Chart(document.getElementById("chartjs-dashboard-line"), {
+  				type: "line",
+  				data: {
+  					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  					datasets: [{
+  						label: "Sales ($)",
+  						fill: true,
+  						backgroundColor: gradient,
+  						borderColor: window.theme.primary,
+  						data: [
+  							2115,
+  							1562,
+  							1584,
+  							1892,
+  							1587,
+  							1923,
+  							2566,
+  							2448,
+  							2805,
+  							3438,
+  							2917,
+  							3327
+  						]
+  					}]
+  				},
+  				options: {
+  					maintainAspectRatio: false,
+  					legend: {
+  						display: false
+  					},
+  					tooltips: {
+  						intersect: false
+  					},
+  					hover: {
+  						intersect: true
+  					},
+  					plugins: {
+  						filler: {
+  							propagate: false
+  						}
+  					},
+  					scales: {
+  						xAxes: [{
+  							reverse: true,
+  							gridLines: {
+  								color: "rgba(0,0,0,0.0)"
+  							}
+  						}],
+  						yAxes: [{
+  							ticks: {
+  								stepSize: 1000
+  							},
+  							display: true,
+  							borderDash: [3, 3],
+  							gridLines: {
+  								color: "rgba(0,0,0,0.0)"
+  							}
+  						}]
+  					}
+  				}
+  			});
+  		});
+  
+script.
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  			// Pie chart
+  			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+  				type: "pie",
+  				data: {
+  					labels: ["Chrome", "Firefox", "IE"],
+  					datasets: [{
+  						data: [4306, 3801, 1689],
+  						backgroundColor: [
+  							window.theme.primary,
+  							window.theme.warning,
+  							window.theme.danger
+  						],
+  						borderWidth: 5
+  					}]
+  				},
+  				options: {
+  					responsive: !window.MSInputMethodContext,
+  					maintainAspectRatio: false,
+  					legend: {
+  						display: false
+  					},
+  					cutoutPercentage: 75
+  				}
+  			});
+  		});
+  
+script.
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  			// Bar chart
+  			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+  				type: "bar",
+  				data: {
+  					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  					datasets: [{
+  						label: "This year",
+  						backgroundColor: window.theme.primary,
+  						borderColor: window.theme.primary,
+  						hoverBackgroundColor: window.theme.primary,
+  						hoverBorderColor: window.theme.primary,
+  						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+  						barPercentage: .75,
+  						categoryPercentage: .5
+  					}]
+  				},
+  				options: {
+  					maintainAspectRatio: false,
+  					legend: {
+  						display: false
+  					},
+  					scales: {
+  						yAxes: [{
+  							gridLines: {
+  								display: false
+  							},
+  							stacked: false,
+  							ticks: {
+  								stepSize: 20
+  							}
+  						}],
+  						xAxes: [{
+  							stacked: false,
+  							gridLines: {
+  								color: "transparent"
+  							}
+  						}]
+  					}
+  				}
+  			});
+  		});
+  
+script.
+    
+    document.addEventListener("DOMContentLoaded", function() {
+  			var markers = [{
+  					coords: [31.230391, 121.473701],
+  					name: "Shanghai"
+  				},
+  				{
+  					coords: [28.704060, 77.102493],
+  					name: "Delhi"
+  				},
+  				{
+  					coords: [6.524379, 3.379206],
+  					name: "Lagos"
+  				},
+  				{
+  					coords: [35.689487, 139.691711],
+  					name: "Tokyo"
+  				},
+  				{
+  					coords: [23.129110, 113.264381],
+  					name: "Guangzhou"
+  				},
+  				{
+  					coords: [40.7127837, -74.0059413],
+  					name: "New York"
+  				},
+  				{
+  					coords: [34.052235, -118.243683],
+  					name: "Los Angeles"
+  				},
+  				{
+  					coords: [41.878113, -87.629799],
+  					name: "Chicago"
+  				},
+  				{
+  					coords: [51.507351, -0.127758],
+  					name: "London"
+  				},
+  				{
+  					coords: [40.416775, -3.703790],
+  					name: "Madrid "
+  				}
+  			];
+
+  			var map = new jsVectorMap({
+  				map: "world",
+  				selector: "#world_map",
+  				zoomButtons: true,
+  				markers: markers,
+  				markerStyle: {
+  					initial: {
+  						r: 9,
+  						strokeWidth: 7,
+  						stokeOpacity: .4,
+  						fill: window.theme.primary
+  					},
+  					hover: {
+  						fill: window.theme.primary,
+  						stroke: window.theme.primary
+  					}
+  				},
+  				zoomOnScroll: false
+  			});
+  			window.addEventListener("resize", () => {
+  				map.updateSize();
+  			});
+  		});
+  
+script.
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+  			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+  			document.getElementById("datetimepicker-dashboard").flatpickr({
+  				inline: true,
+  				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+  				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+  				defaultDate: defaultDate
+  			});
+  		});
+  

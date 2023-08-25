@@ -3,7 +3,7 @@
 
 require "app/core/FrameworkClass.php";
 $initialization = FrameworkClass::getInstance();
-$initialization ->run();
+$initialization->run();
 //session_start();// session on
 //*************************************************************************
 //* Enrty point index.php
@@ -13,7 +13,18 @@ $initialization ->run();
 //* base settings
 //*************************************************************************
 
+//*************************************************************************
+//* Di container
+//*************************************************************************
+require 'DiConfiguration/DiContainerBuild.php';
 
+//*************************************************************************
+//* CTX
+//*************************************************************************
+$CTX = app\core\Ctx::getInstance();
+$CTX->init('Open');
+$CTX->createCtx($DefaultContainer);
+$CTX->serviceLocator('calculatorService');
 //*************************************************************************
 //* libs
 //*************************************************************************

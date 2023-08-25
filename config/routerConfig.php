@@ -24,15 +24,15 @@ return [
 		'controller' => 'Account',
 		'action' => 'login',
 	],
-
 	'dashboard' => [
-		'controller' => 'admin',
-		'action' => 'dashboardInit',
+		'controller' => 'Dashboard',
+		'action' => 'dashboardMainPanel',
 	],
 	'dashboard/profile' => [
-		'controller' => 'admin',
-		'action' => 'index',
+		'controller' => 'Account',
+		'action' => 'profile',
 	],
+	
 
 
 	'dashboard/logout' => [
@@ -54,19 +54,19 @@ return [
 	],
 
 	'blog' => [
-		'controller' => 'main',
+		'controller' => 'Main',
 		'action' => 'blog',
 	],
-	'shop' => [
-		'controller' => 'main',
-		'action' => 'shop',
+	'chat' => [
+		'controller' => 'Chat',
+		'action' => 'ChatInit',
 	],
 	'about' => [
-		'controller' => 'main',
+		'controller' => 'Main',
 		'action' => 'about',
 	],
 	'contact' => [
-		'controller' => 'main',
+		'controller' => 'Main',
 		'action' => 'contact',
 	]
 

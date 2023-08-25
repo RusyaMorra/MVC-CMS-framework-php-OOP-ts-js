@@ -1,16 +1,17 @@
 <?php
 //*************************************************************************
-//* ActionSourcesService
+//* AuditReportsService
 //*************************************************************************
 //*************************************************************************
 //* namespaces
 //*************************************************************************
-require '../config';
-require '../../core/BaseService.php';
+namespace app\baseServices\AuditReportsService;
+//require './config';
+//require '../../core/BaseService.php';
 
 
 
-class ActionSourcesService extends  BaseService {
+class AuditReportsService /*extends  BaseService*/ {
 
     /**
      * @var
@@ -19,7 +20,7 @@ class ActionSourcesService extends  BaseService {
     public $sources=[];
 
     public function __construct($ctx) {
-
+        echo 'audirService324234234';
     }
 
 

@@ -1,22 +1,22 @@
-<?php
+<?
+
 //*************************************************************************
 //* ActionSourcesService
 //*************************************************************************
 //*************************************************************************
 //* namespaces
 //*************************************************************************
-require '../config';
-require '../../core/BaseService.php';
+namespace app\baseServices;
 
 
 
-class ActionSourcesService extends  BaseService {
+class BaseService {
 
     /**
      * @var
      */
 
-    public $sources=[];
+    
 
     public function __construct($ctx) {
 
