@@ -13,6 +13,7 @@ namespace app\core;
 use app\core\View;
 use app\Http\RequestClass;
 
+use app\core\exeptions\RouteExeption;
 
 class Router{
 
@@ -81,6 +82,7 @@ class Router{
         $logMethodsInfo =  $this->ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'METHOD']);
         $logMethodsInfo->log('log: spliting URL'. json_encode( $arr ));
 
+      
         foreach($arr as $key => $val){
             $this->add($key, $val);
            
@@ -100,7 +102,18 @@ class Router{
         $logMethodsInfo->log('log: got two parameters'. $route  . 'and' . json_encode($params));
 
        $route = '#^'. $route .'$#';
-       $this->routes[$route] = $params;
+      
+
+       try{
+            if(isset($params)){
+                $this->routes[$route] = $params;
+            }else{
+                throw new RouteExeption("Route exeption", "params is empty");
+            }
+        
+        }catch(RouteExeption $e){
+            print $e->getTitle()."<br />".$e->getMessage();
+        }
       
     }
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f42de4d5dfe76e94d93129fdd0ed17d1",
+    "content-hash": "0b46aa0037252e77963e95fa558e0f9e",
     "packages": [
         {
             "name": "cilex/cilex",
@@ -3187,23 +3187,23 @@
         },
         {
             "name": "zetacomponents/document",
-            "version": "1.3.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zetacomponents/Document.git",
-                "reference": "196884f00871ea7dcbca9ab8bc85716f626e9cc3"
+                "reference": "353e52a438ea5292d8dbb195a3785bf5264b5405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zetacomponents/Document/zipball/196884f00871ea7dcbca9ab8bc85716f626e9cc3",
-                "reference": "196884f00871ea7dcbca9ab8bc85716f626e9cc3",
+                "url": "https://api.github.com/repos/zetacomponents/Document/zipball/353e52a438ea5292d8dbb195a3785bf5264b5405",
+                "reference": "353e52a438ea5292d8dbb195a3785bf5264b5405",
                 "shasum": ""
             },
             "require": {
                 "zetacomponents/base": "~1.8"
             },
             "require-dev": {
-                "phpunit/phpunit": "~8.0",
+                "phpunit/phpunit": "~9.0",
                 "zetacomponents/unit-test": "*"
             },
             "type": "library",
@@ -3237,9 +3237,9 @@
             "homepage": "https://github.com/zetacomponents",
             "support": {
                 "issues": "https://github.com/zetacomponents/Document/issues",
-                "source": "https://github.com/zetacomponents/Document/tree/1.3.3"
+                "source": "https://github.com/zetacomponents/Document/tree/1.3.4"
             },
-            "time": "2022-02-11T17:26:31+00:00"
+            "time": "2023-09-13T10:41:46+00:00"
         }
     ],
     "packages-dev": [],
@@ -3250,5 +3250,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

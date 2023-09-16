@@ -25,13 +25,12 @@ class Ctx implements  CtxInterface {
 
   public  $RedBeanPHP = null;
   public  $TechnoHubQueryBuilder = null;
-  public  $logs = null;
   public  $elastic= null;
   public  $worker = null;
   public  $kafka = null;
-  public $queue = null;
-  private  $container = null;
-  private  $monolog = null;
+  public  $queue = null;
+  private $container = null;
+  private $LoggerMonolog = null;
 
 
   private  $mode = null;
@@ -56,6 +55,7 @@ class Ctx implements  CtxInterface {
   public function createCtx($container) {
     $this->container = $container;
     $this->TechnoHubQueryBuilder = $this->container->DiContainerGet('TechnohubQueryBuilder');
+   // $this->LoggerMonolog = $this->container->DiContainerGet('LoggerMonolog');
     
   }
 

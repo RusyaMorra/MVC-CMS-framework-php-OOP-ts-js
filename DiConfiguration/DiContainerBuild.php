@@ -47,6 +47,12 @@ $DiContainerBind['LoggerService'] = function ($allClassesOfFrameWorkMerged, $par
     return  $allClassesOfFrameWorkMerged['LoggerService']($params, $ctx);
 };
 
+//Binding LoggerMonolog
+$DiContainerBind['LoggerMonolog'] = function ($allClassesOfFrameWorkMerged, $params= null, $AllServices= null, app\core\InterfacesCore\CtxInterface $ctx){
+    
+    return  $allClassesOfFrameWorkMerged['LoggerMonolog']();
+};
+
 //ctx
 $ctx  = app\core\Ctx::getInstance();
 

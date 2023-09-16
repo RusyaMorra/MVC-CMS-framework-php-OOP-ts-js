@@ -13,6 +13,7 @@
         }
     ],
     "require": {
-        "phpdocumentor/phpdocumentor": "2.*"
+        "phpdocumentor/phpdocumentor": "2.*",
+        "monolog/monolog": "^1.27"
     }
 }
