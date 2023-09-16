@@ -10,7 +10,7 @@ namespace app\core;
 //*************************************************************************
 //* class loading
 //*************************************************************************
-use app\database\DataBaseORM;
+use app\technohubQueryBuilder\TechnohubQueryBuilder;
 
 abstract class Model{
 
@@ -24,8 +24,10 @@ abstract class Model{
      *  Construct, and preloading
      */
 	
-	public function __construct() {
-		$this->db = DataBaseORM::getInstance();
+	public function __construct(InterfacesCore\CtxInterface $ctx) {
+         
+          $this->db = $ctx->TechnoHubQueryBuilder;
+		
         
 	}
 }

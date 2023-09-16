@@ -25,7 +25,7 @@ class MainController extends Controller{
      */
 
     public function homeAction(object $Request){
-
+        
         // $result = $this->model->getNews();
 
         // $vars =[

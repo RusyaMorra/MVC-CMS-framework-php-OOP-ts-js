@@ -2,28 +2,57 @@
 //AllbaseServices path
 $AllServices = new app\baseServices\AllServices();
 
-//baseServices
-$baseServices =  require __DIR__ . './dependenciesDIConfig/baseServices.php';
+//baseServices if need include some kind of config by itself
+//$baseServices =  require __DIR__ . './DIConfig/baseServices.php';
 
 
+//if need include configs in general
+function allClassesOfFrameWorkMerging(){
+
+    $DIConfigs = array_merge(
+        glob(__DIR__ .'./DIConfig/*.php' ?: []),
+    );
+    
+    $allClassesOfFrameWork = array_map(function ($DIConfig){
+        return require $DIConfig;
+    }, $DIConfigs);
 
 
-//Binding
-$DiContainerBind = [
-    'calculatorService'=> function ($baseServices, $AllServices, $ctx){
-        $baseServices['CalculatorService']($AllServices, $ctx);
-    },
-    'AuditReportsService'=> function ($baseServices, $AllServices, $ctx){
-        $baseServices['AuditReportsService']($AllServices, $ctx);
-    },
+    return  array_merge_recursive(...$allClassesOfFrameWork);
+};
 
-];
+$allClassesOfFrameWorkMerged = allClassesOfFrameWorkMerging();
 
 
+//DiContainer
+$DiContainerBind = [];
+
+//Binding baseServices
+$DiContainerBind['CalculatorService'] = function ($allClassesOfFrameWorkMerged, $params= null, $AllServices = null, app\core\InterfacesCore\CtxInterface $ctx){
+    return  $allClassesOfFrameWorkMerged['CalculatorService']($params, $AllServices, $ctx);
+};
+$DiContainerBind['AuditReportsService'] = function ($allClassesOfFrameWorkMerged, $params= null, $AllServices= null, app\core\InterfacesCore\CtxInterface $ctx){
+    return  $allClassesOfFrameWorkMerged['AuditReportsService']($params, $AllServices, $ctx);
+};
+
+
+//Binding technohubQueryBuilder
+$DiContainerBind['TechnohubQueryBuilder'] = function ($allClassesOfFrameWorkMerged, $params= null, $AllServices= null, app\core\InterfacesCore\CtxInterface $ctx){
+
+    return  $allClassesOfFrameWorkMerged['TechnohubQueryBuilder']($params, $ctx);
+};
+//Binding LoggerService 
+$DiContainerBind['LoggerService'] = function ($allClassesOfFrameWorkMerged, $params= null, $AllServices= null, app\core\InterfacesCore\CtxInterface $ctx){
+    
+    return  $allClassesOfFrameWorkMerged['LoggerService']($params, $ctx);
+};
+
+//ctx
+$ctx  = app\core\Ctx::getInstance();
 
 //DefaultContainer
-$DefaultContainer = app\core\DefaultContainer::getInstance();
-$DefaultContainer->init(['defaultScope'=> 'Singleton'], $AllServices, $baseServices, app\core\Ctx::getInstance());
+$DefaultContainer = app\core\DIContainer::getInstance();
+$DefaultContainer->init(['defaultScope'=> 'Singleton'], $AllServices, $allClassesOfFrameWorkMerged, $ctx);
 $DefaultContainer->DiContainerSet($DiContainerBind);
 
 

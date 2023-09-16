@@ -19,7 +19,7 @@ class CalculatorService /*extends  BaseService*/ {
     public $Logtypes=[];
 
     public function __construct($ctx) {
-        $ctx->serviceLocator('AuditReportsService');
+        
     }
 
 

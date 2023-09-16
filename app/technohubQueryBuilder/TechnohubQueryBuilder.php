@@ -7,7 +7,7 @@
 //*************************************************************************
 //* namespaces
 //*************************************************************************
-namespace app\database;
+namespace app\technohubQueryBuilder;
 
 
 //*************************************************************************
@@ -17,7 +17,7 @@ use PDO;
 
 
 
-class DataBaseORM {
+class TechnohubQueryBuilder {
 
     /**
      * @var
@@ -34,7 +34,7 @@ class DataBaseORM {
 	public function __construct() {
 		$this->connect();
 		$this->defaultSetting();
-
+     
 	}
 
 	/**

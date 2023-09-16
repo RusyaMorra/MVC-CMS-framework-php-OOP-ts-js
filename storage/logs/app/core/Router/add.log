@@ -1,0 +1,481 @@
+
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersregisterandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersloginandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parameterschangepasswordandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboardandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboard/profileandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboard/logoutandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboard/addandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersblogandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parameterschatandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersaboutandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parameterscontactandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersregisterandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersloginandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parameterschangepasswordandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboardandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboard/profileandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboard/logoutandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersdashboard/addandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersandArray
+
+---NEW LOG---
+2023.09.16 03:31:16
+log: got two parametersblogandArray
+
+---NEW LOG---
+2023.09.16 03:31:17
+log: got two parameterschatandArray
+
+---NEW LOG---
+2023.09.16 03:31:17
+log: got two parametersaboutandArray
+
+---NEW LOG---
+2023.09.16 03:31:17
+log: got two parameterscontactandArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"register"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"login"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"changepassword"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"dashboard"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"dashboard\/profile"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"dashboard\/logout"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"dashboard\/add"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters""andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"blog"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"chat"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"about"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"contact"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"register"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"login"andArray
+
+---NEW LOG---
+2023.09.16 03:31:32
+log: got two parameters"changepassword"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"dashboard"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"dashboard\/profile"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"dashboard\/logout"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"dashboard\/add"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters""andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"blog"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"chat"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"about"andArray
+
+---NEW LOG---
+2023.09.16 03:31:33
+log: got two parameters"contact"andArray
+
+---NEW LOG---
+2023.09.16 03:31:46
+log: got two parametersregisterand{"controller":"Account","action":"register"}
+
+---NEW LOG---
+2023.09.16 03:31:46
+log: got two parametersloginand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 03:31:46
+log: got two parameterschangepasswordand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 03:31:46
+log: got two parametersdashboardand{"controller":"Dashboard","action":"dashboardMainPanel"}
+
+---NEW LOG---
+2023.09.16 03:31:46
+log: got two parametersdashboard/profileand{"controller":"Account","action":"profile"}
+
+---NEW LOG---
+2023.09.16 03:31:46
+log: got two parametersdashboard/logoutand{"controller":"Account","action":"logout"}
+
+---NEW LOG---
+2023.09.16 03:31:46
+log: got two parametersdashboard/addand{"controller":"admin","action":"logout"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersand{"controller":"Main","action":"home"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersblogand{"controller":"Main","action":"blog"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parameterschatand{"controller":"Chat","action":"ChatInit"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersaboutand{"controller":"Main","action":"about"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parameterscontactand{"controller":"Main","action":"contact"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersregisterand{"controller":"Account","action":"register"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersloginand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parameterschangepasswordand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersdashboardand{"controller":"Dashboard","action":"dashboardMainPanel"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersdashboard/profileand{"controller":"Account","action":"profile"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersdashboard/logoutand{"controller":"Account","action":"logout"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersdashboard/addand{"controller":"admin","action":"logout"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersand{"controller":"Main","action":"home"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersblogand{"controller":"Main","action":"blog"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parameterschatand{"controller":"Chat","action":"ChatInit"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parametersaboutand{"controller":"Main","action":"about"}
+
+---NEW LOG---
+2023.09.16 03:31:47
+log: got two parameterscontactand{"controller":"Main","action":"contact"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersregisterand{"controller":"Account","action":"register"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersloginand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parameterschangepasswordand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersdashboardand{"controller":"Dashboard","action":"dashboardMainPanel"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersdashboard/profileand{"controller":"Account","action":"profile"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersdashboard/logoutand{"controller":"Account","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersdashboard/addand{"controller":"admin","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersand{"controller":"Main","action":"home"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersblogand{"controller":"Main","action":"blog"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parameterschatand{"controller":"Chat","action":"ChatInit"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersaboutand{"controller":"Main","action":"about"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parameterscontactand{"controller":"Main","action":"contact"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersregisterand{"controller":"Account","action":"register"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parametersloginand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:06:46
+log: got two parameterschangepasswordand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parametersdashboardand{"controller":"Dashboard","action":"dashboardMainPanel"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parametersdashboard/profileand{"controller":"Account","action":"profile"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parametersdashboard/logoutand{"controller":"Account","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parametersdashboard/addand{"controller":"admin","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parametersand{"controller":"Main","action":"home"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parametersblogand{"controller":"Main","action":"blog"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parameterschatand{"controller":"Chat","action":"ChatInit"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parametersaboutand{"controller":"Main","action":"about"}
+
+---NEW LOG---
+2023.09.16 04:06:47
+log: got two parameterscontactand{"controller":"Main","action":"contact"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersregisterand{"controller":"Account","action":"register"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersloginand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parameterschangepasswordand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersdashboardand{"controller":"Dashboard","action":"dashboardMainPanel"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersdashboard/profileand{"controller":"Account","action":"profile"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersdashboard/logoutand{"controller":"Account","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersdashboard/addand{"controller":"admin","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersand{"controller":"Main","action":"home"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersblogand{"controller":"Main","action":"blog"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parameterschatand{"controller":"Chat","action":"ChatInit"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersaboutand{"controller":"Main","action":"about"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parameterscontactand{"controller":"Main","action":"contact"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersregisterand{"controller":"Account","action":"register"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersloginand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parameterschangepasswordand{"controller":"Account","action":"login"}
+
+---NEW LOG---
+2023.09.16 04:08:27
+log: got two parametersdashboardand{"controller":"Dashboard","action":"dashboardMainPanel"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parametersdashboard/profileand{"controller":"Account","action":"profile"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parametersdashboard/logoutand{"controller":"Account","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parametersdashboard/addand{"controller":"admin","action":"logout"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parametersand{"controller":"Main","action":"home"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parametersblogand{"controller":"Main","action":"blog"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parameterschatand{"controller":"Chat","action":"ChatInit"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parametersaboutand{"controller":"Main","action":"about"}
+
+---NEW LOG---
+2023.09.16 04:08:28
+log: got two parameterscontactand{"controller":"Main","action":"contact"}

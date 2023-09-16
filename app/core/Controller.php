@@ -23,13 +23,15 @@ abstract class Controller{
     public $route;
     public $views;
     public $acl;
+    public $ctx;
 
-    public function __construct($route) {
+    public function __construct($route, InterfacesCore\CtxInterface $ctx) {
+        $this->ctx = $ctx;
         $this->route = $route;
         $this->views = new View($route);
         $this->model = $this->loadModel($route['controller']);
         $this->startAclChecking();
-       
+        
         
     }
 
@@ -41,7 +43,7 @@ abstract class Controller{
     public function loadModel(string $name) {
         $path = 'app\admin\models\\'.ucfirst($name);
         if(class_exists($path)) {
-            return new $path;
+            return new $path($this->ctx);
         }
     }
 

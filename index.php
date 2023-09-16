@@ -21,10 +21,19 @@ require 'DiConfiguration/DiContainerBuild.php';
 //*************************************************************************
 //* CTX
 //*************************************************************************
-$CTX = app\core\Ctx::getInstance();
-$CTX->init('Open');
-$CTX->createCtx($DefaultContainer);
-$CTX->serviceLocator('calculatorService');
+$ctx = app\core\Ctx::getInstance();
+$ctx->init('Open');
+$ctx->createCtx($DefaultContainer);
+
+//*************************************************************************
+//* logs
+//*************************************************************************
+
+$directoriesConfig = require 'config/filesystems.php';
+$storageDIR = $directoriesConfig['links']['storage'];
+\app\MainTechServices\LoggerService\LoggerService::setRootLogDir($storageDIR);
+
+
 //*************************************************************************
 //* libs
 //*************************************************************************

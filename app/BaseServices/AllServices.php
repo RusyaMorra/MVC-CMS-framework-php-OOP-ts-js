@@ -24,8 +24,8 @@ class AllServices {
     }
 
     private function createNameSpacesArray(){
-       $this->NameSpacesArray['CalculatorService'] = 'app\baseServices\CalculatorService\CalculatorService';
-       $this->NameSpacesArray['AuditReportsService'] = 'app\baseServices\AuditReportsService\AuditReportsService';
+       $this->NameSpacesArray['CalculatorService'] = 'app\\baseServices\\CalculatorService\\CalculatorService';
+       $this->NameSpacesArray['AuditReportsService'] = 'app\\baseServices\\AuditReportsService\\AuditReportsService';
     }
 
 

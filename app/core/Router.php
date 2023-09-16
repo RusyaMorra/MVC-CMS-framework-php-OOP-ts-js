@@ -22,23 +22,46 @@ class Router{
     static private $_instance = null;
     protected  $routes = [];
     protected  $params = [];
+    private $ctx = null;
+    private $logClassInfo = null;
+    private $logMethodsInfo = null;
 
     /**
      *  Construct, and preloading
      */
 
-    function __construct() {
-      $this->splitUrl();
+    function __construct(InterfacesCore\CtxInterface $ctx) {
+        $this->ctx = $ctx;
+
+        $this->logClassInfo =  $ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'CLASS']);
+        $this->logClassInfo->log('log: class router created'/*. $value . ' '. json_encode($array )*/);
+
+        $logMethodsInfo =  $ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'METHOD']);
+        $logMethodsInfo->log('log: router initialization'/*. $value . ' '. json_encode($array )*/);
+
+        $this->splitUrl();
       
     }
+
+
+    /**
+     *  adding in vars
+     *  @param $string
+     *  @return void
+     */
+
+     public  function init() {}
 
      /**
      *  singleton
      */
 
-     static public function getInstance(){
+     static public function getInstance(InterfacesCore\CtxInterface $ctx){
+
+         
+
          if(self::$_instance == null){
-            return self::$_instance = new self;
+            return self::$_instance = new self($ctx);
             
          }
 
@@ -51,8 +74,13 @@ class Router{
 
 
     private function splitUrl() {
-        $arr = require 'config/routerConfig.php';
         
+
+        $arr = require 'config/routerConfig.php';
+
+        $logMethodsInfo =  $this->ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'METHOD']);
+        $logMethodsInfo->log('log: spliting URL'. json_encode( $arr ));
+
         foreach($arr as $key => $val){
             $this->add($key, $val);
            
@@ -67,6 +95,10 @@ class Router{
      */
 
     private function add($route, $params) {
+
+        $logMethodsInfo =  $this->ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'METHOD']);
+        $logMethodsInfo->log('log: got two parameters'. $route  . 'and' . json_encode($params));
+
        $route = '#^'. $route .'$#';
        $this->routes[$route] = $params;
       
@@ -80,6 +112,9 @@ class Router{
      private function match() {
         $url = trim($_SERVER['REQUEST_URI'], '/');
         
+        $logMethodsInfo =  $this->ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'METHOD']);
+        $logMethodsInfo->log('log: matching url and routes');
+
         foreach ($this->routes as $route => $params) {
             if (preg_match($route, $url, $matches)) {
                 $this->params = $params;
@@ -96,12 +131,16 @@ class Router{
      */
 
     public function adminRun() {
+
+        $logMethodsInfo =  $this->ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'METHOD']);
+        $logMethodsInfo->log('log: admin running');
+
         if ($this->match()) {
             $path = 'app\admin\controllers\\'.ucfirst($this->params['controller']).'Controller';
             if (class_exists($path)) {
                 $action = $this->params['action'].'Action';
                 if (method_exists($path, $action)) {
-                    $controller = new $path($this->params);
+                    $controller = new $path($this->params, $this->ctx);
                     $controller->$action(new RequestClass);
                     
                     
@@ -109,6 +148,7 @@ class Router{
                     View::errorCode(404);
                 }
             } else {
+                $logMethodsInfo->log('log: User running');
                 $this->userRun();
             }
         } else {
@@ -127,7 +167,7 @@ class Router{
             if (class_exists($path)) {
                 $action = $this->params['action'].'Action';
                 if (method_exists($path, $action)) {
-                    $controller = new $path($this->params);
+                    $controller = new $path($this->params, $this->ctx);
                     $controller->$action(new RequestClass);
                     
                     
