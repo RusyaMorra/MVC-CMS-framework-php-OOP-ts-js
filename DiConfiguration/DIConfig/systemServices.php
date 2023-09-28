@@ -1,11 +1,12 @@
 <?php
 
 
+require 'vendor/autoload.php';
 use \Monolog\Level;
 use \Monolog\Logger;
 use \Monolog\Handler\StreamHandler;
 
-
+ 
 return [
     'LoggerMonolog' => function (){
         // create a log channel

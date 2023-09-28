@@ -30,7 +30,7 @@ class Ctx implements  CtxInterface {
   public  $kafka = null;
   public  $queue = null;
   private $container = null;
-  private $LoggerMonolog = null;
+  public  $LoggerMonolog = null;
 
 
   private  $mode = null;
@@ -55,7 +55,7 @@ class Ctx implements  CtxInterface {
   public function createCtx($container) {
     $this->container = $container;
     $this->TechnoHubQueryBuilder = $this->container->DiContainerGet('TechnohubQueryBuilder');
-   // $this->LoggerMonolog = $this->container->DiContainerGet('LoggerMonolog');
+    $this->LoggerMonolog = $this->container->DiContainerGet('LoggerMonolog');
     
   }
 

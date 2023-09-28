@@ -13,7 +13,7 @@ class DIContainer /*implements  DiConraiterInterface*/  extends DefaultContainer
 	
 	private $defaultScope;
 	static private $_instance = null;
-	private $DiConraiterOfInstances = null;
+	private  $DiConraiterOfInstances = null;
 	private  $AllServices = null;
 	private  $allClassesOfFrameWorkMerged  = null;
 	private  $ctx = null;
@@ -99,9 +99,9 @@ class DIContainer /*implements  DiConraiterInterface*/  extends DefaultContainer
 	 */
 	public function resolve($concrete, $parameters)
 	{
-		if ($concrete instanceof Closure) {
-			return $concrete($this, $parameters);
-		}
+		//if ($concrete instanceof Closure) {
+		//	return $concrete($this, $parameters);
+		//}
 
 		$reflector = new ReflectionClass($concrete);
 		// check if class is instantiable

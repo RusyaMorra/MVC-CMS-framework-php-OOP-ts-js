@@ -26,6 +26,7 @@ class Router{
     private $ctx = null;
     private $logClassInfo = null;
     private $logMethodsInfo = null;
+    private $monologLogger = null;
 
     /**
      *  Construct, and preloading
@@ -33,7 +34,11 @@ class Router{
 
     function __construct(InterfacesCore\CtxInterface $ctx) {
         $this->ctx = $ctx;
+        //logging in console
+        $this->monologLogger =  $ctx->serviceLocator('LoggerMonolog');
+        $this->monologLogger->warning('Foo');
 
+        //logging in file
         $this->logClassInfo =  $ctx->serviceLocator('LoggerService', ['path_value'=>__CLASS__, 'method_value'=>__METHOD__, 'mode'=>'CLASS']);
         $this->logClassInfo->log('log: class router created'/*. $value . ' '. json_encode($array )*/);
 

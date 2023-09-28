@@ -131,3 +131,143 @@ log: spliting URL{"register":{"controller":"Account","action":"register"},"login
 ---NEW LOG---
 2023.09.16 06:13:04
 log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:08:34
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:08:35
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:08:37
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:16:37
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:16:37
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:16:52
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:16:52
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:20:54
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:20:54
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:28:23
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:28:24
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:33:40
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:33:41
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:40:45
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:40:46
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 08:40:49
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:41:46
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.19 11:41:46
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.20 02:27:29
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.20 02:27:29
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:38
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:39
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:56
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:56
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:57
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:57
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:57
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:57
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:57
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:57
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:20:58
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:21:08
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:21:12
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:21:18
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}
+
+---NEW LOG---
+2023.09.24 07:21:20
+log: spliting URL{"register":{"controller":"Account","action":"register"},"login":{"controller":"Account","action":"login"},"changepassword":{"controller":"Account","action":"login"},"dashboard":{"controller":"Dashboard","action":"dashboardMainPanel"},"dashboard\/profile":{"controller":"Account","action":"profile"},"dashboard\/logout":{"controller":"Account","action":"logout"},"dashboard\/add":{"controller":"admin","action":"logout"},"":{"controller":"Main","action":"home"},"blog":{"controller":"Main","action":"blog"},"chat":{"controller":"Chat","action":"ChatInit"},"about":{"controller":"Main","action":"about"},"contact":{"controller":"Main","action":"contact"}}

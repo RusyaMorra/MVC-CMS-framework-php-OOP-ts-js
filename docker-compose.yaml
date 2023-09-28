@@ -1,0 +1,60 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: "nginx:stable-alpine"
+    ports:
+      - "8000:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/var/www/TechnoHubEngine
+    depends_on:
+      - mysql
+      - php
+  php:
+    build:
+      context: dockerfiles
+      dockerfile: php.Dockerfile
+    volumes:
+      - ./src:/var/www/TechnoHubEngine
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3316:3306"
+    env_file:
+      - ENVIRONMENT-CONFIG/mysql.env
+    volumes:
+      - db_data:/var/lib/mysql
+
+  composer:
+    build:
+      context: dockerfiles
+      dockerfile: composer.Dockerfile
+    volumes:
+      - ./:/var/www/TechnoHubEngine
+  artisan:
+    build:
+      context: dockerfiles
+      dockerfile: php.Dockerfile
+    volumes:
+      - ./:/var/www/TechnoHubEngine
+    entrypoint: ["php", "/var/www/TechnoHubEngine/artisan"]
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+  
+  npm:  
+    image: node:16.15.1
+    working_dir: /var/www/TechnoHubEngine
+    entrypoint: ["npm"]
+    volumes: 
+      - "./:/var/www/TechnoHubEngine"      
+
+
+volumes:
+  db_data:
