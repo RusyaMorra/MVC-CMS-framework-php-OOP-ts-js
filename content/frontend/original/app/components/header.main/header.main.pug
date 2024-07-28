@@ -1,0 +1,35 @@
+block variables
+    -
+        var pageClass ='App';
+        var RootDirectory = "<? echo APP_USER_PATH; ?>";
+        var RootDirectoryInCodeFormat = "APP_USER_PATH";
+
+
+link(rel='stylesheet', href!=`${RootDirectory}vendor/bootstrap/css/bootstrap.min.css`)
+//-header section  start
+header.header.container-fluid.mx-auto.d-flex.flex-nowrap
+    .logo.col-2.h-100.d-flex.justify-content-center.align-items-center
+        img(src!=`${RootDirectory}assets/images/main-img/logo/logo.png`, alt)
+    menu.main-menu.col-8.d-flex.flex-row.justify-content-center.align-items-center
+        li
+            a(href='...') Главная
+        li
+            a(href='...') портфолио
+        li
+            a(href='...') блог
+        li
+            a(href='...') Онлайн чат
+        li
+            a(href='...') каталог услуг
+        li
+            a(href='...') О нас
+        li
+            a(href='...') Команда
+        li
+            a(href='...') Контакты
+        li
+            a(href='...') Обучение
+    .additional-elements.col-2.h-100.d-flex.justify-content-center.align-items-center
+        a.button-offer(href) Логин
+        a.button-offer(href) Регистрация
+//-header section  end

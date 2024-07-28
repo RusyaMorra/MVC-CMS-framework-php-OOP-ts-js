@@ -1,0 +1,9 @@
+block variables
+-
+  var pageClass ='App';
+  var RootDirectory = "<? echo APP_USER_PATH; ?>";
+  var RootDirectoryInCodeFormat = "APP_USER_PATH";
+  
+link(rel='stylesheet', type='text/css', href!=`${RootDirectory}assets/css/main.footer.min.css`)
+//-footer
+include ../../components/footer.main/footer.main.pug

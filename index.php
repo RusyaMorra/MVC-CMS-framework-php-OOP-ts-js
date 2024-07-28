@@ -17,6 +17,7 @@ $initialization->run();
 //* Di container
 //*************************************************************************
 require 'DiConfiguration/DiContainerBuild.php';
+//require 'cron/send_massages_to_mails.php';
 
 //*************************************************************************
 //* CTX

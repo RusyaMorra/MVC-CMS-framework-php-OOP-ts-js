@@ -1,0 +1,42 @@
+/**
+ * Bootstrap
+ */
+ @import './scss-modules/variables.scss';
+// @import '../../vendor/bootstrap/bootstrap.scss';
+
+/**
+ * Mixins
+ */
+
+// @import '../../mixins/sass/pos-center.scss';
+// @import '../../mixins/sass/pos-strech.scss';
+// @import '../../mixins/sass/responsive-title.scss';
+// @import '../../mixins/sass/letter-spacing.scss';
+// @import '../../mixins/sass/gradient.scss';
+// @import '../../mixins/sass/font-face.scss';
+
+
+
+/**
+ * parts
+ */
+ @import './main-styles/_main-base';
+
+
+
+
+/**
+ * Components
+ */
+// @import '../components/_components.scss'; 
+
+
+
+
+
+
+
+
+
+
+@import '../components/header.main/_header.main.scss'; 

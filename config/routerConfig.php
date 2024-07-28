@@ -11,16 +11,16 @@ return [
 //*************************************************************************
 	
 
-	'register' => [
+	'dashboard/register' => [
 		'controller' => 'Account',
 		'action' => 'register',
 	],
 
-	'login' => [
+	'dashboard/login' => [
 		'controller' => 'Account',
 		'action' => 'login',
 	],
-	'changepassword' => [
+	'dashboard/changepassword' => [
 		'controller' => 'Account',
 		'action' => 'login',
 	],
@@ -49,13 +49,21 @@ return [
 //*************************************************************************
 	
 	'' => [
-		'controller' => 'Main',
-		'action' => 'home',
+		'controller' => 'Home',
+		'action' => 'main',
 	],
 
 	'blog' => [
-		'controller' => 'Main',
-		'action' => 'blog',
+		'controller' => 'Blog',
+		'action' => 'main',
+	],
+	'register' => [
+		'controller' => 'User',
+		'action' => 'register',
+	],
+	'login' => [
+		'controller' => 'User',
+		'action' => 'login',
 	],
 	'chat' => [
 		'controller' => 'Chat',
