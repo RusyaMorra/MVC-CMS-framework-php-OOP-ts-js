@@ -18,3 +18,11 @@
 1. Клонируйте репозиторий:
    ```bash
    git clone 
+
+
+
+
+npm install sass@1.32.0 --save-dev с этой версией работает нормально
+
+
+npm install @babel/plugin-syntax-dynamic-import  если требует

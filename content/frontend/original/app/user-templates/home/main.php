@@ -15,8 +15,8 @@
       <div class="overflow-for-context"><?php if($vars["viewMode"] == "HomePage"){ require APP_USER_PATH . '/user-templates/components/header.main.php';} ?>
         <div class="intro-area container-xxl row mx-auto">
           <div class="left-part-display h-100 col-6 d-flex justify-content-center align-items-start flex-column">
-            <h1 class="intro-text">СОЗДАЁМ<br><span>ПРОДАЮЩИЕ</span><br>И  <span>ЭФФЕКТИВНЫЕ</span><br>САЙТЫ И ПО</h1>
-            <h2 class="additional-text mt-3">Прадуктивно решаем задачи клиентов и<br>удиляем максимум внимание деталям</h2><a class="button-offer mt-3 w-50" href>Свяжитесь с нами</a>
+            <h1 class="intro-text">СОЗДАЁМ<br><span>ПРОДАЮЩИЕ</span><br>И  <span>ЭФФЕКТИВНЫЕ</span><br>ТЕХНОЛОГИЧЕСКИЕ РЕШЕНИЯ</h1>
+            <h2 class="additional-text mt-3">Прадуктивно решаем задачи клиентов и<br>уделяем максимум внимание деталям</h2><a class="button-offer mt-3 w-50" href>Свяжитесь с нами</a>
           </div>
           <div class="rigth-part-display h-100 col-6 d-flex justify-content-center align-items-center">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RroDdybvu5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
